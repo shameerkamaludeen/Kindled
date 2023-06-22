@@ -1,5 +1,19 @@
 {
+  "name": "kindled",
+  "description": "A website design made with the help of a design inspired by one of the Geekfolio theme template.",
+  "version": "0.0.0",
+  "private": false,
+  "repository": "shameerkamaludeen/kindled",
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
+  "scripts": {
+    "build": "sass --style=compressed --embed-sources --no-error-css scss:styles",
+    "css-compile": "sass --embed-sources --no-error-css scss:styles",
+    "watch": "sass --watch --embed-sources --no-error-css scss:styles"
+  },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.0"
   }
 }
