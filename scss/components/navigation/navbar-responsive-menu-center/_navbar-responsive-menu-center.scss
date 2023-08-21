@@ -1,0 +1,69 @@
+/* || Component - Navbar responsive manu center
+   ========================================================================== */
+
+// 1. Features
+// Menubar center on devices
+// Center menu
+@use '../../text/rolling-text/rolling-text';
+
+// || navbar
+.navbar-responsive-menu-center {}
+
+.navbar-rmc-container {
+  @include media-breakpoint-down(lg) {
+    padding: 0;
+  }
+}
+
+// || brand
+.navbar-rmc-brand {
+  max-width: 85px;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 100px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin-left: 30px;
+  }
+}
+
+.navbar-rmc-brand-img {
+  width: 100%;
+  display: block;
+}
+
+// || toggler
+.navbar-rmc-toggler {
+  @include media-breakpoint-down(lg) {
+    margin-right: 18px;
+  }
+}
+
+// || collapse
+.navbar-rmc-collapse {
+  @include media-breakpoint-down(lg) {
+    margin-top: 15px;
+  }
+}
+
+// || nav
+.navbar-rmc-nav-item {
+  &:not(:last-child) {
+    @include media-breakpoint-down(lg) {
+      border-bottom: var(--bs-border-width) var(--bs-border-style) hsla(0, 0%, 0%, 0.1);
+    }
+  }
+}
+
+.navbar-rmc-nav-link {
+  letter-spacing: 1px;
+  padding: 15px 30px;
+}
+
+// || search form
+.navbar-rmc-search {
+  @include media-breakpoint-down(lg) {
+    display: none !important;
+  }
+}

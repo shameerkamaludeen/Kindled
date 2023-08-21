@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kindled</title>
+	<meta name="description"
+		content="This is a website developed with the help of a design inspired by one of the Geekfolio's Creative Agency & Portfolio theme template.">
+	<link rel="icon" type="image/png" sizes="128x128" href="images/favicon-128x128.png">
+
+	<!-- Google fonts starts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&family=Sora:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<!-- Google fonts ends -->
+
+	<!-- Font awesome kit -->
+	<script src="https://kit.fontawesome.com/efb6dbae73.js" crossorigin="anonymous"></script>
+
+	<!-- local style import -->
+	<link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-	<h1>Kindled</h1>
+
+	<header class="py-1">
+		<nav class="navbar navbar-expand-lg bg-body shadow-sm navbar-responsive-menu-center">
+			<div class="container-lg navbar-rmc-container">
+				<a href="" class="navbar-brand cursor-hc-scale navbar-rmc-brand cursor-hs-scale">
+					<h1 class="visually-hidden">Kindled</h1>
+					<img src="images/logo-dark.png" alt="Kindled" class="navbar-rmc-brand-img">
+				</a>
+
+				<button class="navbar-toggler border-0 navbar-rmc-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse navbar-rmc-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item navbar-rmc-nav-item">
+							<a class="nav-link active text-uppercase fw-semibold fs-7 cursor-hs-scale navbar-rmc-nav-link"
+								aria-current="page" href="">
+								<div class="rolling-text">Home</div>
+							</a>
+						</li>
+						<li class="nav-item navbar-rmc-nav-item">
+							<a class="nav-link text-uppercase fw-semibold fs-7 cursor-hs-scale navbar-rmc-nav-link"
+								href="pages/about.html">
+								<div class="rolling-text">About</div>
+							</a>
+						</li>
+						<li class="nav-item navbar-rmc-nav-item">
+							<a class="nav-link text-uppercase fw-semibold fs-7 cursor-hs-scale navbar-rmc-nav-link"
+								href="pages/services.html">
+								<div class="rolling-text">Services</div>
+							</a>
+						</li>
+						<li class="nav-item navbar-rmc-nav-item">
+							<a class="nav-link text-uppercase fw-semibold fs-7 cursor-hs-scale navbar-rmc-nav-link"
+								href="pages/team.html">
+								<div class="rolling-text">Team</div>
+							</a>
+						</li>
+						<li class="nav-item navbar-rmc-nav-item">
+							<a class="nav-link text-uppercase fw-semibold fs-7 cursor-hs-scale navbar-rmc-nav-link"
+								href="pages/portfolio.html">
+								<div class="rolling-text">Portfolio</div>
+							</a>
+						</li>
+						<li class="nav-item navbar-rmc-nav-item">
+							<a class="nav-link text-uppercase fw-semibold fs-7 cursor-hs-scale navbar-rmc-nav-link"
+								href="pages/contact.html">
+								<div class="rolling-text">Contact</div>
+							</a>
+						</li>
+					</ul>
+					<form class="d-flex navbar-rmc-search" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<aside>
+		<div class="cursor-hover-scale rounded-circle d-none d-lg-block"></div>
+	</aside>
+	<!-- gsap starts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+	<!-- gsap ends -->
+	<script type="module" src="scripts/main.js"></script>
 </body>
+
 </html>
