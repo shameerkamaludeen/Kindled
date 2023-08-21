@@ -1,0 +1,18 @@
+/* || Component - Rolling text
+   ========================================================================== */
+
+// 1. Features
+// Rolling each char of the text on hover on that element
+
+.rolling-text {
+  height: 30px;
+  overflow: hidden;
+}
+
+.rt-block {
+  line-height: 30px;
+}
+
+.rt-letter {
+  display: inline-block;
+}
