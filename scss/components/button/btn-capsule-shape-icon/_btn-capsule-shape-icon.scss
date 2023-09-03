@@ -1,0 +1,24 @@
+/* || Component - Button capsule shape icon
+   ========================================================================== */
+
+// 1. Features
+// Capsule link button
+// Shape inside link with the icon
+// Hover effect
+
+@use 'sass:color';
+@import '../../../../node_modules/bootstrap/scss/variables';
+
+.btn-capsule-shape-icon {
+  line-height: 45px;
+
+  &:focus {
+    background-color: $white;
+  }
+}
+
+.btn-csi-circle {
+  background-color: orange;
+  width: 45px;
+  height: 45px;
+}

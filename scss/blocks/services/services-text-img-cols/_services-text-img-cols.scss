@@ -1,0 +1,49 @@
+/* Block - Services text img cols
+   ========================================================================== */
+
+// 1. Features
+// Responsive text and image columns
+// Fancy numbered list
+// Card over an image with background pattern
+
+@use 'sass:map';
+@import '../../../components/banner/banner-roll-color-change/banner-roll-color-change';
+@import '../../../components/card/card-lead-icon-bg/card-lead-icon-bg';
+
+.services-text-img-cols {
+  margin-bottom: 120px;
+}
+
+.services-tic-img-col {
+  width: 95%;
+}
+
+.services-tic-desc-para {
+  margin-bottom: 80px;
+}
+
+.services-tic-ol {
+  list-style-type: none;
+  counter-reset: li;
+}
+
+.services-tic-li {
+  font-size: map.get($font-sizes, 1);
+}
+
+.services-tic-li-text {
+  display: block;
+  position: relative;
+  padding-left: 63px;
+
+  &::before {
+    content: counters(li, '', decimal-leading-zero);
+    counter-increment: li;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    text-align: center;
+    font-size: map.get($font-sizes, 5);
+    font-weight: $font-weight-medium;
+  }
+}

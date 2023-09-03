@@ -1,0 +1,49 @@
+/* || Component - Banner roll full width
+   ========================================================================== */
+
+// 1. Features
+// Full width banner with rolling text (only full width possible)
+// The banner is tilted
+
+.banner-roll-full-width {
+  padding: 45px 0;
+  margin: -45px 0;
+}
+
+.banner-rfw-wr {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+  transform: rotate(-3deg);
+  width: calc(100% + 8px);
+  left: -5px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, #f1f3f5, transparent 15%, transparent 85%, #f1f3f5);
+  }
+}
+
+.banner-rfw-items-ctr {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.banner-rfw-item {
+  flex-shrink: 0;
+  padding: 0 25px;
+}
+
+.banner-rfw-text {
+  margin: 0;
+}

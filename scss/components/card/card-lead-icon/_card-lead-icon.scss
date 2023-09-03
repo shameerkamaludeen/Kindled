@@ -1,0 +1,33 @@
+/* || Component - Card lead icon
+   ========================================================================== */
+
+// 1. Features
+// Left aligned
+// Fixed icon
+// Capsule shaped lead
+
+.card-lead-icon {
+  padding: 50px 30px;
+}
+
+.card-li-icon-wr {
+  width: 50px;
+}
+
+.card-li-link {
+  transition: background-color 0.4s;
+  position: relative;
+  padding: 11px 0 11px 30px;
+  &:hover {
+    background-color: white;
+  }
+}
+
+.card-li-link-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  padding: 15px;
+}

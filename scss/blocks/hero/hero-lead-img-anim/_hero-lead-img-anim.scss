@@ -1,0 +1,35 @@
+/* || Block - Hero lead image animation
+   ========================================================================== */
+
+// 1. Features
+// Hero with heading, para, lead and image 
+// Animated lead
+// Pattern background
+
+@import '../../../../node_modules/bootstrap/scss/variables';
+@import '../../../components/button/btn-capsule-shape-icon/btn-capsule-shape-icon';
+
+.hero-lead-img-anim {
+  padding-top: 120px;
+  margin-bottom: 120px;
+}
+
+.hero-lia-img-desc-wr {}
+
+.hero-lia-img-wr {
+  height: 400px;
+
+  & > img {
+    object-position: center;
+  }
+}
+
+.hero-lia-tittle-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px $body-color;
+}
+
+.hero-lia-pattern {
+  background: url(../images/pattern-grid.png) left top / cover no-repeat;
+  pointer-events: none;
+}
