@@ -8,6 +8,10 @@
 
 .blog-link-card-list {}
 
+.blog-lcl-card-ctr {
+  padding-top: 30px;
+}
+
 .blog-lcl-tag-link {
   @include link-basic($color: false,
     $color-visited: false,
