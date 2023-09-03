@@ -1,2 +1,114 @@
 // Abstracts - mixins
 // =============================================================================
+
+@import '../abstracts/variables-ls';
+
+// || Animation
+
+@mixin inline-animation($duration: 0.5s,
+  $animation-fill-mode: false,
+  $animation-timing-function: ease,
+  $animation-iteration-count: 1) {
+  $name: inline-#{unique-id()};
+
+  @keyframes #{$name} {
+    @content;
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+
+  @if $animation-fill-mode {
+    animation-fill-mode: $animation-fill-mode;
+  }
+
+  @if $animation-timing-function {
+    animation-timing-function: $animation-timing-function;
+  }
+
+  @if $animation-iteration-count {
+    animation-iteration-count: $animation-iteration-count;
+  }
+}
+
+// || Links
+
+// use this along with '%link-no-decor-outline' if required
+@mixin link-basic($color: $primary,
+  $color-visited: false,
+  $color-focus: false,
+  $color-hover: false,
+  $color-active: false,
+  $background-color: false,
+  $background-color-visited: false,
+  $background-color-focus: false,
+  $background-color-hover: false,
+  $background-color-active: false,
+  $outline: 2px solid $secondary,
+  $cursor: pointer,
+  $transition: (color 0.3s ease)) {
+
+  @if $transition {
+    transition: $transition;
+  }
+
+  @if $cursor {
+    cursor: $cursor;
+  }
+
+  &:link {
+    @if $color {
+      color: $color !important;
+    }
+
+    @if $background-color {
+      background-color: $background-color !important;
+    }
+  }
+
+  &:visited {
+    @if $color-visited {
+      color: $color-visited !important;
+    }
+
+    @if $background-color-visited {
+      background-color: $background-color-visited !important;
+    }
+  }
+
+  &:focus {
+    @if $color-focus {
+      color: $color-focus !important;
+    }
+
+    @if $background-color-focus {
+      background-color: $background-color-focus !important;
+    }
+  }
+
+  &:focus-visible {
+    @if $outline {
+      outline: $outline;
+    }
+  }
+
+  &:hover {
+    @if $color-hover {
+      color: $color-hover !important;
+    }
+
+    @if $background-color-hover {
+      background-color: $background-color-hover !important;
+    }
+  }
+
+  &:active {
+    @if $color-active {
+      color: $color-active !important;
+    }
+
+    @if $background-color-active {
+      background-color: $background-color-active !important;
+    }
+  }
+}

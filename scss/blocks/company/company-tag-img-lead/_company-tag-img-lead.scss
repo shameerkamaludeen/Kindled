@@ -1,0 +1,27 @@
+/* || Block - Company tag img lead
+   ========================================================================== */
+
+// 1. Feature
+// Block with image, lead, tag, sub description, tittle
+// Overlaped Image design
+// Sub description with tittle and icon
+// Lead with icon and background circle
+
+@import '../../../../node_modules/bootstrap/scss/variables';
+@import '../../../components/image/img-overlap-tile/img-overlap-tile';
+
+.company-tag-img-lead {
+   margin-bottom: 100px;
+}
+
+.company-til-block-1 {
+   margin-bottom: 80px;
+}
+
+.company-til-image-ot {
+   margin-bottom: 100px;
+
+   @include media-breakpoint-down(lg) {
+      padding: 0;
+   }
+}

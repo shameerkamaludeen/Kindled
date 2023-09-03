@@ -1,0 +1,20 @@
+/* || Component - Banner lg text stroke
+   ========================================================================== */
+
+// 1. Features
+// Lead with large text and icon
+// Text stroke
+
+@import '../../../abstracts/variables-ls';
+
+.banner-lg-text-stroke {}
+
+.banner-lts-stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 1px $primary;
+}
+
+.banner-lst-icon {
+  position: relative;
+  top: 10px;
+}

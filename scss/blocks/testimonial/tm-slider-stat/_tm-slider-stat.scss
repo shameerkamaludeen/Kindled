@@ -1,0 +1,53 @@
+/* || Block - Testimonials slider statistics
+   ========================================================================== */
+
+// 1. Features
+// Contain tag, slider, image frame and statistics
+// Image frame designed circle with background circle element and foreground icon
+// Slider of testimonial with profile, rating, testimonial and controls
+// Stats are alternatively stroked texts with number and label
+
+.tm-slider-stat {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-bottom: 120px;
+}
+
+.tm-ss-tm-row {
+  margin-bottom: 75px;
+}
+
+.tm-ss-img-frame-ctr {
+  width: 320px;
+}
+
+.tm-ss-img-frame-bg,
+.tm-ss-img-frame-img-wr {
+  width: 225px;
+  height: 225px;
+}
+
+.tm-ss-rating-icon-ctr {
+  color: #ffaa17 !important;
+}
+
+.tm-ss-tm-profile-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.tm-ss-swiper-btn {
+  width: 50px;
+  height: 50px;
+}
+
+.tm-ss-stat-count {
+  font-size: 80px;
+}
+
+.tm-ss-stat-count-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px $primary;
+}
