@@ -10,6 +10,16 @@ export default function addBannerRCCEvents() {
 
   let bannerRCCItemsCtrElem = bannerRCCWrapperElem.querySelectorAll('.banner-rcc-items-ctr');
 
-  // cloning items element to not jerk off the animation
-  gsap.to(bannerRCCItemsCtrElem, { xPercent: -100, ease: 'none', duration: 25, repeat: -1 })
+  gsap.to(bannerRCCItemsCtrElem, {
+    scrollTrigger: {
+      trigger: '.banner-rcc-wr',
+      toggleActions: 'play pause resume pause',
+      start: 'top bottom',
+      end: 'bottom top'
+    },
+    xPercent: -100,
+    ease: 'none',
+    duration: 25,
+    repeat: -1
+  });
 }

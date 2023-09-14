@@ -10,7 +10,7 @@
 
 // 4. Include any default map overrides here
 @import 'abstracts/maps-ls';
-@import 'abstracts/utilities';
+@import 'abstracts/utilities-ls';
 
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
@@ -60,8 +60,11 @@
 // Vendors (jQuery | Bootstrap | etc)
 @import '../node_modules/swiper/swiper';
 
-// Layout
+// Base
 @import 'base/base';
+@import 'base/sitewide';
+
+// Layout
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/main';

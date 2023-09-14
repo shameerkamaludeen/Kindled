@@ -16,14 +16,24 @@
   @include link-basic($color: false,
     $color-visited: false,
     $color-focus: false,
-    $color-hover: $white,
+    $color-hover: #{$white} !important,
     $color-active: false,
-    $background-color: false,
-    $background-color-visited: false,
-    $background-color-focus: false,
-    $background-color-hover: $tertiary,
-    $background-color-active: false,
-    $outline: 2px solid $tertiary,
+    $bg-color: false,
+    $bg-color-visited: false,
+    $bg-color-focus: false,
+    $bg-color-hover: #{$tertiary} !important,
+    $bg-color-active: false,
+    $outline: 2px solid #{$tertiary} !important,
     $cursor: pointer,
     $transition: (all 0.3s));
+}
+
+.blog-lcl-card-img-wr {
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    left: 0;
+    right: -27px;
+    top: 0;
+    bottom: -32px;
+  }
 }

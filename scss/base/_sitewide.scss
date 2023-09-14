@@ -1,0 +1,108 @@
+/* || Base - Sitewide
+   ========================================================================== */
+
+// 1. Notes:
+// Sitewide is the collection of style rules in the form of placeholders and 
+// strictly not utilities
+
+// || Flex
+
+// Flexible wrap
+%flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// Flexible vertically center(vc) and horizontally space between(hsb)
+%flex-v-center-h-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// Flexible vertical and horizontal centered
+%flex-v-center-h-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// Flexible vertically centered horizontally right
+%flex-v-center-h-right {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+// Flexible horizontally right
+%flex-v-center {
+	display: flex;
+	align-items: center;
+}
+
+// Flexible horizontally right
+%flex-h-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+// Flexible horizontally center
+%flex-h-center {
+	display: flex;
+	justify-content: center;
+}
+
+// Flexible horizontally center wrap
+%flex-h-center-wrap {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+// Flexible horizontally space around
+%flex-h-sa {
+	display: flex;
+	justify-content: space-around;
+}
+
+// Flexible horizontally space between
+%flex-h-sb {
+	display: flex;
+	justify-content: space-between;
+}
+
+// Flexible direction column
+%flex-dc {
+	display: flex;
+	flex-direction: column;
+}
+
+// Flexible direction column wrap 
+%flex-dc-wrap {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+// Flexible direction column vertically and horizontally centerd 
+%flex-dc-v-center-h-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+// Flexible direction column horizontally centered 
+%flex-dc-h-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// || Inline-flex
+
+// Flexible(inline) vertical and horizontal centered
+%inline-flex-v-center-h-center {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}

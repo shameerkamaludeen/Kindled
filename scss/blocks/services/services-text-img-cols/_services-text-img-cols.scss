@@ -14,10 +14,6 @@
   margin-bottom: 120px;
 }
 
-.services-tic-img-col {
-  width: 95%;
-}
-
 .services-tic-desc-para {
   margin-bottom: 80px;
 }
@@ -45,5 +41,13 @@
     text-align: center;
     font-size: map.get($font-sizes, 5);
     font-weight: $font-weight-medium;
+  }
+}
+
+.services-tic-card {
+  width: 95%;
+
+  @include media-breakpoint-up(lg) {
+    width: 75%;
   }
 }

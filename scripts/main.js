@@ -7,13 +7,21 @@ import addNavbarRMCEvents from '../scss/components/navigation/navbar-responsive-
 import addRollingTextEvents from "../scss/components/text/rolling-text/rolling-text.js";
 import addBannerRFWEvents from "../scss/components/banner/banner-roll-full-width/banner-roll-full-width.js";
 import addBrandsISEvents from "../scss/blocks/brand/brands-img-swiper/brands-img-swiper.js";
-import addBannerRCCEvents from "../scss/components/banner/banner-roll-color-change/banner-roll-color-change.js";
 import addTMSliderStatEvents from "../scss/blocks/testimonial/tm-slider-stat/tm-slider-stat.js";
+import addFormSearchAnimEvents from "../scss/components/form/form-search-anim/_form-search-anim.js";
+import addHeroLIAEvents from "../scss/blocks/hero/hero-lead-img-anim/hero-lead-img-anim.js";
+import addProjectCSEvents from "../scss/blocks/project/projects-cards-scrollable/projects-cards-scrollable.js";
+import addBannerRCCEvents from "../scss/components/banner/banner-roll-color-change/banner-roll-color-change.js";
+
+gsap.registerPlugin(ScrollTrigger);
 
 addCHScaleEvents();
 addNavbarRMCEvents();
 addRollingTextEvents();
 addBannerRFWEvents();
 addBrandsISEvents();
-addBannerRCCEvents();
 addTMSliderStatEvents();
+addFormSearchAnimEvents();
+addHeroLIAEvents();
+addProjectCSEvents();
+addBannerRCCEvents();
