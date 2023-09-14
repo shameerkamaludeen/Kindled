@@ -2,6 +2,7 @@
 // =============================================================================
 
 @import '../abstracts/variables-ls';
+@import '../base/sitewide';
 
 // || Animation
 
@@ -39,11 +40,11 @@
   $color-focus: false,
   $color-hover: false,
   $color-active: false,
-  $background-color: false,
-  $background-color-visited: false,
-  $background-color-focus: false,
-  $background-color-hover: false,
-  $background-color-active: false,
+  $bg-color: false,
+  $bg-color-visited: false,
+  $bg-color-focus: false,
+  $bg-color-hover: false,
+  $bg-color-active: false,
   $outline: 2px solid $secondary,
   $cursor: pointer,
   $transition: (color 0.3s ease)) {
@@ -58,31 +59,31 @@
 
   &:link {
     @if $color {
-      color: $color !important;
+      color: $color;
     }
 
-    @if $background-color {
-      background-color: $background-color !important;
+    @if $bg-color {
+      background-color: $bg-color;
     }
   }
 
   &:visited {
     @if $color-visited {
-      color: $color-visited !important;
+      color: $color-visited;
     }
 
-    @if $background-color-visited {
-      background-color: $background-color-visited !important;
+    @if $bg-color-visited {
+      background-color: $bg-color-visited;
     }
   }
 
   &:focus {
     @if $color-focus {
-      color: $color-focus !important;
+      color: $color-focus;
     }
 
-    @if $background-color-focus {
-      background-color: $background-color-focus !important;
+    @if $bg-color-focus {
+      background-color: $bg-color-focus;
     }
   }
 
@@ -94,21 +95,129 @@
 
   &:hover {
     @if $color-hover {
-      color: $color-hover !important;
+      color: $color-hover;
     }
 
-    @if $background-color-hover {
-      background-color: $background-color-hover !important;
+    @if $bg-color-hover {
+      background-color: $bg-color-hover;
     }
   }
 
   &:active {
     @if $color-active {
-      color: $color-active !important;
+      color: $color-active;
     }
 
-    @if $background-color-active {
-      background-color: $background-color-active !important;
+    @if $bg-color-active {
+      background-color: $bg-color-active;
     }
+  }
+}
+
+// || Buttons
+
+// Make display: false if %v-h-center: true
+@mixin btn-basic($color: $primary,
+  $color-focus: false,
+  $color-hover: false,
+  $color-active: false,
+  $bg-color: $secondary,
+  $bg-color-focus: false,
+  $bg-color-hover: false,
+  $bg-color-active: false,
+  $border: 1px,
+  $border-radius: 4px,
+  $width: auto,
+  $height: auto,
+  $outline: 2px solid $primary,
+  $outline-offset: false,
+  $cursor: pointer,
+  $text-align: false,
+  $display: false,
+  $v-h-center: false,
+  $transition: (bg-color 0.2s ease, outline 0.2s ease)) {
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $bg-color {
+    bg-color: $bg-color;
+  }
+
+  &:focus {
+    @if $color-focus {
+      color: $color-focus;
+    }
+
+    @if $bg-color-focus {
+      bg-color: $bg-color-focus;
+    }
+  }
+
+  &:focus-visible {
+    @if $outline {
+      outline: $outline;
+    }
+  }
+
+  &:hover {
+    @if $color-hover {
+      color: $color-hover;
+    }
+
+    @if $bg-color-hover {
+      bg-color: $bg-color-hover;
+    }
+  }
+
+  &:active {
+    @if $color-active {
+      color: $color-active;
+    }
+
+    @if $bg-color-active {
+      bg-color: $bg-color-active;
+    }
+  }
+
+  @if $border {
+    border: $border;
+  }
+
+  @if $border-radius {
+    border-radius: $border-radius;
+  }
+
+  @if $width {
+    width: $width;
+  }
+
+  @if $height {
+    height: $height;
+  }
+
+  @if $outline-offset {
+    outline-offset: $outline-offset;
+  }
+
+  @if $transition {
+    transition: $transition;
+  }
+
+  @if $cursor {
+    cursor: pointer;
+  }
+
+  @if $text-align {
+    text-align: $text-align;
+  }
+
+  @if $display {
+    display: $display;
+  }
+
+  @if $v-h-center {
+    @extend %inline-flex-v-center-h-center;
   }
 }

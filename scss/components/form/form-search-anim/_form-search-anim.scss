@@ -1,0 +1,71 @@
+/* Component - Form search anim
+  =========================================================================== */
+
+// 1. Features
+// Button click to visible search input
+// The input and button are animated
+// The form limited to larger devices
+
+@import '../../../abstracts/mixins-ls';
+
+.form-search-anim {
+  position: relative;
+  align-self: stretch;
+
+  @include media-breakpoint-down(lg) {
+    display: none !important;
+  }
+}
+
+.form-sa-control {
+  border-left: 1px solid tint-color($secondary, 60%);
+  border-right: 1px solid tint-color($secondary, 60%);
+  border-top: none;
+  border-bottom: none;
+  width: 74px;
+}
+
+// Here the active class work on different element for the working of animation
+.form-sa-control-icon-wr-search {
+  span {
+    position: relative;
+    top: -10px;
+    transition: top 0.3s;
+  }
+
+  .active {
+    top: 0;
+  }
+}
+
+.form-sa-control-icon-wr-close {
+  position: relative;
+  top: -200%;
+  transition: top 0.3s;
+
+  &.active {
+    top: -100%;
+  }
+}
+
+.form-sa-form {
+  position: absolute;
+  width: 270px;
+  opacity: 0;
+  pointer-events: none;
+  right: 0;
+  bottom: -100px;
+  transition: all 0.4s;
+}
+
+.form-sa-form-active {
+  bottom: -67px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.form-sa-input {
+  right: -5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
