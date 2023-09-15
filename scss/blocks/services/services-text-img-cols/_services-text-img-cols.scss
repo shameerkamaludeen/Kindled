@@ -44,10 +44,23 @@
   }
 }
 
+.services-tic-img-wr {
+  height: 540px;
+
+  @include media-breakpoint-up(xl) {
+    width: 75%;
+    margin-left: auto;
+  }
+}
+
 .services-tic-card {
   width: 95%;
 
   @include media-breakpoint-up(lg) {
     width: 75%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 70%;
   }
 }

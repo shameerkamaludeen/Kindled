@@ -8,6 +8,10 @@
 
 .card-lead-icon {
   padding: 50px 30px;
+
+  @include media-breakpoint-up(xl) {
+    padding: 60px;
+  }
 }
 
 .card-li-icon-wr {

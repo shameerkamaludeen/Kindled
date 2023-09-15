@@ -38,12 +38,17 @@
 }
 
 .hero-lia-circle-img-wr {
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   display: none;
 
   @include media-breakpoint-up(lg) {
     display: block;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 180px;
+    height: 180px;
   }
 }
 
