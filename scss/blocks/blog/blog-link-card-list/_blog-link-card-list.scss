@@ -28,6 +28,12 @@
     $transition: (all 0.3s));
 }
 
+.blog-lcl-card-img-relative-wr {
+  @include media-breakpoint-up(xl) {
+    height: 250px !important;
+  }
+}
+
 .blog-lcl-card-img-wr {
   @include media-breakpoint-up(lg) {
     position: absolute;
@@ -35,5 +41,10 @@
     right: -27px;
     top: 0;
     bottom: -32px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    bottom: -64px;
+    right: -40px;
   }
 }

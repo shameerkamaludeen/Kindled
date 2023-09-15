@@ -19,12 +19,21 @@
 
 .tm-ss-img-frame-ctr {
   width: 320px;
+
+  @include media-breakpoint-up(xl) {
+    width: 400px;
+  }
 }
 
 .tm-ss-img-frame-bg,
 .tm-ss-img-frame-img-wr {
   width: 225px;
   height: 225px;
+
+  @include media-breakpoint-up(xl) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .tm-ss-rating-icon-ctr {
@@ -44,6 +53,14 @@
 }
 
 .tm-ss-stat-count {
+  font-size: 80px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 120px;
+  }
+}
+
+.tm-ss-stat-count-text {
   font-size: 80px;
 }
 

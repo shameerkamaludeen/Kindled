@@ -9,7 +9,11 @@
 .projects-cards-scrollable {}
 
 // Use for ScrollTrigger triggger and pin
-.projects-cs-ctr {}
+.projects-cs-ctr {
+   @include media-breakpoint-up(xl) {
+      --bs-gutter-x: 5rem;
+   }
+}
 
 // Use this for ScrollTrigger animation
 .projects-cs-project {}
