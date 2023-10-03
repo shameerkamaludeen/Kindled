@@ -13,6 +13,10 @@
    @include media-breakpoint-up(xl) {
       --bs-gutter-x: 5rem;
    }
+
+   @media screen and (min-width: 1600px) {
+      --bs-gutter-x: 7rem;
+   }
 }
 
 // Use this for ScrollTrigger animation

@@ -1,0 +1,23 @@
+/* || Component - loader full wh anim
+   ========================================================================== */
+
+// 1. Features
+// Full width and height background with loading text animation
+// The loader animated out once the page load is completed
+
+.loader-full-wh-anim {
+  z-index: 2000;
+}
+
+// split text
+.loader-fw-ha-st {
+  .st-letter {
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
+
+.loader-fw-ha-st-op-1 {
+  opacity: 1 !important;
+  transition: opacity 0.3s;
+}

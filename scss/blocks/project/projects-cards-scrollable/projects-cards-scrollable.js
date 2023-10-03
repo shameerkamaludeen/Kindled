@@ -1,11 +1,11 @@
 /* Block - Projects cards scrollable
    ========================================================================== */
 
-import { breakpoints, clientWidth } from "../../../../scripts/variables.js";
+import { breakpoints } from "../../../../scripts/variables.js";
 
 export default function addProjectCSEvents() {
   const projectElems = gsap.utils.toArray('.projects-cs-project');
-  if (!projectElems.length || clientWidth < breakpoints.lg) {
+  if (!projectElems.length || window.innerWidth < breakpoints.lg) {
     return;
   }
   gsap.to(projectElems, {
@@ -16,7 +16,7 @@ export default function addProjectCSEvents() {
       start: 'center center',
       end: () => '+=' + (projectElems[0].offsetWidth * projectElems.length)
     },
-    xPercent: -100 * (projectElems.length - 2),
+    xPercent: -101 * (projectElems.length - 2),
     ease: 'none'
   });
 }

@@ -6,4 +6,3 @@ export const breakpoints = {
   xl: 1200,
   xxl: 1400
 }
-export let clientWidth = window.innerWidth;

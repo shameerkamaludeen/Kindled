@@ -1,0 +1,28 @@
+/* || Component - Anim swipe in tb
+   ========================================================================== */
+
+// 1. Features
+// Animate swipe in from top to bottom
+// 2. Notes
+// Make sure wrapper and inner element with these classes 
+
+@import '../../../abstracts/mixins-ls';
+
+.anim-swipe-in-tb {
+  overflow: hidden;
+}
+
+// Class use to select element for animation
+.anim-si-tb-animate {
+
+  @include make-animation($duration: 1s,
+    $animation-fill-mode: false) {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+}

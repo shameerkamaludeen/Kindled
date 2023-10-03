@@ -19,9 +19,6 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Google fonts ends -->
 
-	<!-- Font awesome kit -->
-	<script src="https://kit.fontawesome.com/efb6dbae73.js" crossorigin="anonymous"></script>
-
 	<!-- local style import -->
 	<link rel="stylesheet" href="styles/style.css">
 </head>
@@ -32,10 +29,26 @@
 		<div class="cursor-hover-scale rounded-circle d-none d-lg-block"></div>
 	</aside>
 
+	<!-- || Component - Scroll to top btn anim -->
+	<aside class="position-fixed z-3 scroll-to-top-btn-anim cursor-hs-scale">
+		<button type="button"
+			class="w-100 h-100 d-flex justify-content-center align-items-center border border-2 border-secondary rounded-circle">
+			<span class="material-icons fw-semibold">
+				expand_less
+			</span>
+		</button>
+	</aside>
+
+	<!-- || Component - loader full wh anim -->
+	<aside
+		class="position-fixed vw-100 vh-100 d-flex justify-content-center align-items-center bg-white loader-full-wh-anim">
+		<div class="cfs-13 cfs-lg-20 fw-light text-uppercase opacity-0 loader-fw-ha-st">Loading</div>
+	</aside>
+
 	<!-- || Header -->
-	<header>
-		<!-- || Navbar -->
-		<nav class="navbar navbar-expand-lg bg-body shadow-sm navbar-responsive-menu-center">
+	<header class="sticky-header-top-anim">
+		<!-- || Component - Navbar responsive manu center -->
+		<nav class="navbar navbar-expand-lg bg-body navbar-responsive-menu-center">
 			<div class="container-lg navbar-rmc-container">
 				<a href="/" class="navbar-brand cursor-hs-scale navbar-rmc-brand cursor-hs-scale">
 					<h1 class="visually-hidden">Kindled</h1>
@@ -50,7 +63,7 @@
 
 				<div class="collapse navbar-collapse navbar-rmc-collapse" id="navbarSupportedContent">
 					<!-- || Nav -->
-					<ul class="navbar-nav me-auto navbar-rmc-navbar">
+					<ul class="navbar-nav me-auto mx-xxl-auto navbar-rmc-navbar">
 						<li class="nav-item navbar-rmc-nav-item">
 							<a class="nav-link active text-uppercase fw-semibold cfs-13 cursor-hs-scale ls-normal navbar-rmc-nav-link"
 								aria-current="page" href="">
@@ -120,7 +133,7 @@
 		<article>
 			<!-- || Block - Hero lead image animation -->
 			<div class="position-relative hero-lead-img-anim">
-				<div class="container">
+				<div class="container anim-opacity-y-up-delayed">
 					<div class="row mb-4 mb-xl-5 align-items-center justify-content-between">
 						<div class="col-lg-8">
 							<h2 class="mb-0 display-1 cfs-xl-85 fw-bold text-uppercase ls-wide hero-lia-tittle">High End <span
@@ -146,7 +159,7 @@
 					<div class="container mb-5">
 						<div class="row">
 							<div class="col-lg-5">
-								<div class="ms-lg-5 ps-xl-4 me-xl-3">
+								<div class="ms-lg-5 ps-xl-4 ps-xxl-5 me-xl-3 anim-opacity-y-up-delayed">
 									<p class="text-secondary lh-md fw-light mb-4 pb-2">Through our years of experience, we've also learned
 										that
 										while
@@ -165,7 +178,7 @@
 					</div>
 
 					<div class="hero-lia-img-col">
-						<div class="w-100 h-100">
+						<div class="w-100 h-100 anim-y-up-delayed">
 							<img src="images/hero.jpg" alt="Project Discussion" class="w-100 h-100 object-fit-cover">
 						</div>
 					</div>
@@ -180,22 +193,21 @@
 				<div class="container">
 					<div class="row justify-content-between company-til-block-1 align-items-center">
 						<div class="col-md-11 col-lg-5">
-							<div class="mb-3">
+							<div class="mb-3 anim-opacity">
 								<h2 class="visually-hidden">Our Benefits</h2>
 								<span
 									class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium"
 									aria-hidden="true">Our
 									Benefits</span>
 							</div>
-							<h3 class="h1 fw-semibold lh-sm">Our Team of Dedicated Digital Professionals.</h3>
+							<h3 class="h1 fw-semibold lh-sm anim-scale-rotate-x">Our Team of Dedicated Digital Professionals.</h3>
 						</div>
 
 						<div class="col-md-10 col-lg-6 col-xl-5">
-							<p class="text-secondary lh-md fw-light mb-5">Through our years of experience, we’ve also learned that
-								while
-								each channel has its own set of
-								advantages, they all work best when strategically paired with other channels.</p>
-							<a class="cfs-14 link-primary link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-capitalize d-inline-block ps-4 pe-2 cursor-hs-scale link-circle-bg-icon"
+							<p class="text-secondary lh-md fw-light mb-5 anim-swipe-in-tb">Through our years of experience, we’ve also learned that
+								while each channel has its own set of advantages, they all work best when strategically paired with
+								other channels.</p>
+							<a class="cfs-14 link-primary link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-capitalize d-inline-block ps-4 pe-2 cursor-hs-scale link-circle-bg-icon anim-opacity"
 								href="/"><span>View All Our News</span><svg class="d-inline-block ps-1"
 									xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22">
 									<path
@@ -219,20 +231,22 @@
 						</div>
 
 						<div class="col-lg-5">
-							<h3 class="h1 fw-semibold lh-sm mb-5 pb-3">Unlock Revenue Growth for Your Business.</h3>
+							<h3 class="h1 fw-semibold lh-sm mb-5 pb-3 anim-scale-rotate-x">Unlock Revenue Growth for Your Business.
+							</h3>
 							<div class="ms-3 ps-5">
-								<div class="row align-items-center mb-4 pb-2">
+								<div class="row align-items-center mb-4 pb-2 anim-opacity">
 									<div class="col-auto company-til-thumbnail-wr">
 										<img class="w-100" src="images/company/company-icon1.png" alt="Icon">
 									</div>
 									<div class="col">
 										<h4 class="fs-6 cfs-xl-20 mb-3">High Standerd</h4>
-										<p class="cfs-15 text-secondary fw-light lh-md">Molestiae nulla labore ipsam maiores, perferendis qui
+										<p class="cfs-15 text-secondary fw-light lh-md">Molestiae nulla labore ipsam maiores, perferendis
+											qui
 											quis blanditiis nihil dignissimos!</p>
 									</div>
 								</div>
 
-								<div class="row align-items-center">
+								<div class="row align-items-center anim-opacity">
 									<div class="col-auto company-til-thumbnail-wr">
 										<img class="w-100" src="images/company/company-icon-2.png" alt="Icon">
 									</div>
@@ -420,12 +434,12 @@
 			</section>
 
 			<!-- || Block - Projects cards scrollable  -->
-			<section class="mb-5 projects-cards-scrollable">
-				<div class="container">
+			<section class="mb-5 overflow-hidden projects-cards-scrollable">
+				<div class="container-fluid">
 					<h2 class="visually-hidden">Projects</h2>
 
 					<div class="row gy-5 gx-5 row-cols-1 flex-lg-nowrap overflow-x-hidden projects-cs-ctr">
-						<div class="col col-lg-6 position-relative projects-cs-project">
+						<div class="col col-lg-6 position-relative ms-lg-5 projects-cs-project">
 							<div class="card-img-footer">
 								<div class="mb-4">
 									<a class="d-block stretched-link cursor-hs-scale" href="#"><img class="w-100"
@@ -671,7 +685,8 @@
 											</span>
 										</div>
 
-										<p class="cfs-18 cfs-xl-24 lh-base mb-5">I have been hiring people in this space for a number of years and I
+										<p class="cfs-18 cfs-xl-24 lh-base mb-5">I have been hiring people in this space for a number of
+											years and I
 											have never seen this level of
 											professionalism. It really feels like you are working with a team that can get the job done.</p>
 
@@ -698,7 +713,8 @@
 											</span>
 										</div>
 
-										<p class="cfs-18 cfs-xl-24 lh-base mb-5">I have been hiring people in this space for a number of years and I
+										<p class="cfs-18 cfs-xl-24 lh-base mb-5">I have been hiring people in this space for a number of
+											years and I
 											have never seen this level of
 											professionalism. It really feels like you are working with a team that can get the job done.</p>
 
@@ -738,12 +754,14 @@
 						</div>
 
 						<div class="col">
-							<p class="text-center fw-800 lh-1 tm-ss-stat-count">4<span class="fw-semibold tm-ss-stat-count-text">k</span></p>
+							<p class="text-center fw-800 lh-1 tm-ss-stat-count">4<span
+									class="fw-semibold tm-ss-stat-count-text">k</span></p>
 							<h4 class="text-center h6 mb-5 mb-xl-4">Projects Completed</h4>
 						</div>
 
 						<div class="col">
-							<p class="text-center fw-800 lh-1 tm-ss-stat-count tm-ss-stat-count-stroke">9<span class="fw-semibold tm-ss-stat-count-text">k</span></p>
+							<p class="text-center fw-800 lh-1 tm-ss-stat-count tm-ss-stat-count-stroke">9<span
+									class="fw-semibold tm-ss-stat-count-text">k</span></p>
 							<h4 class="text-center h6 mb-5 mb-xl-4">Happy Customers</h4>
 						</div>
 
@@ -791,7 +809,8 @@
 
 									<div class="col-md-7 align-self-center ps-xl-5">
 										<div class="mb-3 cfs-12 text-secondary ls-base"><span>AUGUST 6, 2022</span></div>
-										<h3 class="cfs-18 cfs-xl-24 me-5 me-xl-0 lh-base mb-3">Free advertising for your online business.</h3>
+										<h3 class="cfs-18 cfs-xl-24 me-5 me-xl-0 lh-base mb-3">Free advertising for your online business.
+										</h3>
 										<div class="mb-3 mb-xl-0">
 											<a href="#"
 												class="text-primary d-inline-block rounded-1 bg-secondary-subtle px-3 py-2 cfs-13 text-decoration-none blog-lcl-tag-link">Marketing</a>
@@ -885,7 +904,7 @@
 					<h3 class="h6 cfs-xl-20 mb-3">Newsletter</h3>
 					<form class="row border-bottom form-ns-minimal g-0">
 						<div class="col">
-							<input type="email" class="form-control bg-white border-0 w-100 cfs-14 px-0 py-2" id="email"
+							<input type="email" class="form-control bg-white border-0 w-100 cfs-14 px-0 py-2 shadow-none" id="email"
 								placeholder="Type Your Email">
 						</div>
 						<button type="submit" class="col-auto btn"><i class="fa-solid fa-arrow-right"></i></button>
@@ -918,11 +937,12 @@
 		</div>
 	</footer>
 
-	<!-- gsap starts -->
+	<!-- gsap scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-	<!-- gsap ends -->
+
+	<!-- Font awesome kit -->
+	<script src="https://kit.fontawesome.com/efb6dbae73.js" crossorigin="anonymous"></script>
 	<script type="module" src="scripts/main.js"></script>
 </body>
 

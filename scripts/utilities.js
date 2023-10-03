@@ -19,3 +19,19 @@ export function animateValue(obj, start, end, duration) {
 	};
 	window.requestAnimationFrame(step);
 }
+
+export function splitText(elem) {
+	let splitText = elem.innerText;
+	elem.innerHTML = "";
+
+	let stBlockElem = document.createElement("div");
+
+	for (let stChar of splitText) {
+		let stCharElem = document.createElement("span");
+		stCharElem.innerText = stChar.trim() === "" ? "\xa0" : stChar;
+		stCharElem.classList.add('st-letter');
+		stBlockElem.appendChild(stCharElem);
+	}
+	stBlockElem.classList.add('st-block');
+	elem.appendChild(stBlockElem);
+}
