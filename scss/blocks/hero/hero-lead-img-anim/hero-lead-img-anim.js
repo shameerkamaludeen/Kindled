@@ -1,7 +1,10 @@
 /* || Block - Hero lead image animation
    ========================================================================== */
 
-export default function addHeroLIAEvents() {
+import '../../../components/animation/anim-y-up-delayed/anim-y-up-delayed.js';
+import '../../../components/animation/anim-opacity-y-up-delayed/anim-opacity-y-up-delayed.js';
+
+(function () {
   const cirlceElems = document.querySelectorAll('.hero-lia-circle-img-wr');
 
   if (!cirlceElems.length) {
@@ -48,4 +51,4 @@ export default function addHeroLIAEvents() {
   cirlceElems[0].addEventListener('mouseleave', function (e) {
     animate(e);
   });
-}
+}());

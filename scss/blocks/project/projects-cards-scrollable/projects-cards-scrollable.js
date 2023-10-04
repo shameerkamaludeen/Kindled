@@ -3,7 +3,7 @@
 
 import { breakpoints } from "../../../../scripts/variables.js";
 
-export default function addProjectCSEvents() {
+(function () {
   const projectElems = gsap.utils.toArray('.projects-cs-project');
   if (!projectElems.length || window.innerWidth < breakpoints.lg) {
     return;
@@ -19,4 +19,4 @@ export default function addProjectCSEvents() {
     xPercent: -101 * (projectElems.length - 2),
     ease: 'none'
   });
-}
+}());

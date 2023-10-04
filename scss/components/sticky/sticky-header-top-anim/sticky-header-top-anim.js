@@ -1,7 +1,7 @@
 /* || Component - Sticky header top
    ========================================================================== */
 
-export default function addStickyHeaderTopEvents() {
+(function () {
   const stickyHeaderElem = document.querySelector('.sticky-header-top-anim');
   // Return if the component not in the page
   if (typeof (stickyHeaderElem) == 'undefined' || stickyHeaderElem == null) {
@@ -41,4 +41,4 @@ export default function addStickyHeaderTopEvents() {
       stickyHeaderElem.classList.remove('sticky-hta-animate-out');
     }
   }
-}
+}());

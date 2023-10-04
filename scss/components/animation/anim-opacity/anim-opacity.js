@@ -1,7 +1,7 @@
 /* || Component - Anim opacity
    ========================================================================== */
 
-export default function animOpacity() {
+(function () {
   const animElems = gsap.utils.toArray('.anim-opacity');
   animElems.forEach(animElem => {
     gsap.from(animElem, {
@@ -14,4 +14,4 @@ export default function animOpacity() {
       ease: 'power2.out'
     });
   });
-}
+}());

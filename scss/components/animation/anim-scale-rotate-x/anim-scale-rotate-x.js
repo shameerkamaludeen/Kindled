@@ -1,7 +1,7 @@
 /* || Component - Anim scale rotate x
    ========================================================================== */
 
-export default function animScaleRotateX() {
+(function () {
   const animElems = gsap.utils.toArray('.anim-scale-rotate-x');
   animElems.forEach(animElem => {
     gsap.from(animElem, {
@@ -15,4 +15,4 @@ export default function animScaleRotateX() {
       ease: 'power2.out'
     });
   });
-}
+}());

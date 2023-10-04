@@ -3,7 +3,7 @@
 
 import { splitText } from "../../../../scripts/utilities.js";
 
-export default function loaderFullWHAnimEvents() {
+(function () {
   const splitTextElem = document.querySelector('.loader-fw-ha-st');
   if (typeof (splitTextElem) == 'undefined' || splitTextElem == null) {
     return;
@@ -31,4 +31,4 @@ export default function loaderFullWHAnimEvents() {
       onComplete: () => { loaderTextAnim.kill(); }
     });
   });
-}
+}());

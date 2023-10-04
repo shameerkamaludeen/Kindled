@@ -1,7 +1,7 @@
 /* || Component - Anim opacity y up delayed
    ========================================================================== */
 
-export default function animOpacityYUpDelayed() {
+(function () {
   const animElems = gsap.utils.toArray('.anim-opacity-y-up-delayed');
   animElems.forEach(animElem => {
     gsap.from(animElem, {
@@ -16,4 +16,5 @@ export default function animOpacityYUpDelayed() {
       delay: 2.5
     });
   });
-}
+
+}());

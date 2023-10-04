@@ -2,7 +2,7 @@
    ========================================================================== */
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
-export default function addBrandsISEvents() {
+(function () {
   const swiper = new Swiper('.brands-is-swiper', {
     direction: 'horizontal',
     loop: true,
@@ -19,4 +19,4 @@ export default function addBrandsISEvents() {
       },
     }
   })
-}
+}());

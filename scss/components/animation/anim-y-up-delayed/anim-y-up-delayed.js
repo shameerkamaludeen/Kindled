@@ -1,7 +1,7 @@
 /* || Component - Anim y up delayed
    ========================================================================== */
 
-export default function animYUpDelayed() {
+(function () {
   const animElems = gsap.utils.toArray('.anim-y-up-delayed');
   animElems.forEach(animElem => {
     gsap.from(animElem, {
@@ -15,4 +15,4 @@ export default function animYUpDelayed() {
       delay: 2.5
     });
   });
-}
+}());

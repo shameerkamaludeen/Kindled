@@ -1,7 +1,7 @@
 /* || Component - Scroll to top btn anim
    ========================================================================== */
 
-export default function scrollToTopBTNAnimEvents() {
+(function () {
   const scrollBtnElem = document.querySelector('.scroll-to-top-btn-anim');
   if (typeof (scrollBtnElem) == 'undefined' || scrollBtnElem == null) {
     return;
@@ -20,4 +20,5 @@ export default function scrollToTopBTNAnimEvents() {
       scrollBtnElem.classList.remove('scroll-tt-ba-active');
     }
   });
-}
+
+}());

@@ -1,7 +1,7 @@
 /* || Component - Anim y up
    ========================================================================== */
 
-export default function animYUp() {
+(function () {
   const animElems = gsap.utils.toArray('.anim-y-up');
   animElems.forEach(animElem => {
     gsap.from(animElem, {
@@ -14,4 +14,5 @@ export default function animYUp() {
       ease: 'power2.out'
     });
   });
-}
+
+}());

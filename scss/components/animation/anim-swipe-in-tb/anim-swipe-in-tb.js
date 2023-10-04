@@ -1,7 +1,7 @@
 /* || Component - Anim swipe in tb
    ========================================================================== */
 
-export default function animSwipInTB() {
+(function () {
   const animElems = gsap.utils.toArray('.anim-swipe-in-tb');
   animElems.forEach(animElem => {
     gsap.from(animElem, {
@@ -12,4 +12,4 @@ export default function animSwipInTB() {
       }
     });
   });
-}
+}());

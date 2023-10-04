@@ -3,7 +3,7 @@
 
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
-export default function addTMSliderStatEvents() {
+(function () {
   const swiper = new Swiper('.tm-ss-swiper', {
     direction: 'horizontal',
     loop: true,
@@ -13,4 +13,4 @@ export default function addTMSliderStatEvents() {
       prevEl: ".swiper-button-prev",
     },
   });
-}
+}());
