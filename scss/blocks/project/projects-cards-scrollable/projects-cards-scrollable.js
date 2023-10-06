@@ -14,7 +14,8 @@ import { breakpoints } from "../../../../scripts/variables.js";
       pin: true,
       scrub: 1,
       start: 'center center',
-      end: () => '+=' + (projectElems[0].offsetWidth * projectElems.length)
+      end: () => '+=' + (projectElems[0].offsetWidth * projectElems.length),
+      refreshPriority: 1
     },
     xPercent: -101 * (projectElems.length - 2),
     ease: 'none'

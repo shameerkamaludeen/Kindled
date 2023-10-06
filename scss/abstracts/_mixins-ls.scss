@@ -1,9 +1,6 @@
 // Abstracts - mixins
 // =============================================================================
 
-@import '../abstracts/variables-ls';
-@import '../base/sitewide';
-
 // || Animation
 
 @mixin inline-animation($duration: 0.5s,

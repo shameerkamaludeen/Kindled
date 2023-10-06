@@ -1,8 +1,7 @@
 /* || Block - Hero lead image animation
    ========================================================================== */
 
-import '../../../components/animation/anim-y-up-delayed/anim-y-up-delayed.js';
-import '../../../components/animation/anim-opacity-y-up-delayed/anim-opacity-y-up-delayed.js';
+import '../../../components/animation/anim-gsap/anim-gsap.js'
 
 (function () {
   const cirlceElems = document.querySelectorAll('.hero-lia-circle-img-wr');

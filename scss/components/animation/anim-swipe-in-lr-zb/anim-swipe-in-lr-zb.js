@@ -1,7 +1,4 @@
 /* || Component - Anim swipe in lr
    ========================================================================== */
 
-// 1. Features
-// Animate swipe in from left to right which is current state of the element  
-
-.anim-swipe-in-lr {}
+import '../anim-gsap/anim-gsap.js';

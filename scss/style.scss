@@ -1,5 +1,6 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
+@import 'abstracts/functions-ls';
 
 // 2. Include any default variable overrides here
 @import 'abstracts/variables-ls';
@@ -9,8 +10,8 @@
 @import "../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
-@import 'abstracts/maps-ls';
-@import 'abstracts/utilities-ls';
+@import 'base/maps-ls';
+@import 'base/utilities-ls';
 
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
@@ -59,6 +60,9 @@
 // 8. Add additional custom code here
 // Vendors (jQuery | Bootstrap | etc)
 @import '../node_modules/swiper/swiper';
+
+// 1. Abstracts
+@import 'abstracts/mixins-ls';
 
 // Base
 @import 'base/base';
