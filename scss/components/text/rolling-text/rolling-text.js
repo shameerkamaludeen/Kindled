@@ -1,7 +1,7 @@
 /* || Component - Rolling text
    ========================================================================== */
 
-export default function addRollingTextEvents() {
+(function () {
   let rollingTextElems = document.querySelectorAll('.rolling-text');
 
   for (const rtElem of rollingTextElems) {
@@ -41,4 +41,4 @@ export default function addRollingTextEvents() {
       }
     });
   }
-}
+}());

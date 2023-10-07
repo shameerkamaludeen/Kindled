@@ -1,7 +1,7 @@
 /* || Component - Banner roll full width
    ========================================================================== */
 
-export default function addBannerRFWEvents() {
+(function () {
   const bannerRFWWrapperElem = document.querySelector('.banner-rfw-wr');
 
   if (typeof (bannerRFWWrapperElem) == 'undefined' || bannerRFWWrapperElem == null) {
@@ -23,4 +23,4 @@ export default function addBannerRFWEvents() {
     duration: 25,
     repeat: -1
   })
-}
+}());

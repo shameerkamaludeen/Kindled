@@ -1,12 +1,10 @@
-/* Component - Form search anim
+/* || Component - Form search anim
   =========================================================================== */
 
 // 1. Features
 // Button click to visible search input
 // The input and button are animated
 // The form limited to larger devices
-
-@import '../../../abstracts/mixins-ls';
 
 .form-search-anim {
   position: relative;

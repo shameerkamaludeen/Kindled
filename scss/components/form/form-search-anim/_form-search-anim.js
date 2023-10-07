@@ -1,7 +1,7 @@
 /* Component - Form search anim
   =========================================================================== */
 
-export default function addFormSearchAnimEvents() {
+(function () {
   const formSAElem = document.querySelector('.form-search-anim')
   if (typeof (formSAElem) == 'undefined' || formSAElem == null) {
     return;
@@ -22,4 +22,4 @@ export default function addFormSearchAnimEvents() {
     closeElem.classList.toggle('active');
     formElem.classList.toggle('form-sa-form-active')
   });
-}
+}());

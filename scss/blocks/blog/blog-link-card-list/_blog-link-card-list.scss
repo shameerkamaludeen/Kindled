@@ -4,9 +4,9 @@
 // 1. Features
 // Contains tag, lead, card of blog with tags, image, date and tittle
 
-@import '../../../abstracts/mixins-ls';
-
-.blog-link-card-list {}
+.blog-link-card-list {
+  padding-bottom: 120px;
+}
 
 .blog-lcl-card-ctr {
   padding-top: 30px;

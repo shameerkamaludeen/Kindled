@@ -1,0 +1,25 @@
+/* || Component - Sticky header top anim
+   ========================================================================== */
+
+// 1. Features
+// Sticky header for navbar which is designed user convinience
+// Stick to top of the page
+// 2. Required
+// gsap pluggin
+
+// This require as it is the selection element in javascript
+.sticky-header-top-anim {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.sticky-hta-animate-in {
+  transition: transform 0.5s;
+  transform: none;
+}
+
+.sticky-hta-animate-out {
+  transition: transform 0.5s;
+  transform: translateY(-100%);
+}

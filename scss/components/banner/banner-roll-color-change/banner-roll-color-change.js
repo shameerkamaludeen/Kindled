@@ -1,7 +1,7 @@
 /* || Component - Banner roll color change
    ========================================================================== */
 
-export default function addBannerRCCEvents() {
+(function () {
   const bannerRCCWrapperElem = document.querySelector('.banner-rcc-wr');
 
   if (typeof (bannerRCCWrapperElem) == 'undefined' || bannerRCCWrapperElem == null) {
@@ -22,4 +22,4 @@ export default function addBannerRCCEvents() {
     duration: 25,
     repeat: -1
   });
-}
+}());

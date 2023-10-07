@@ -1,7 +1,7 @@
 /* || Components - Cursor hover scale
    ========================================================================== */
 
-export default function addCHScaleEvents() {
+(function () {
   const cursorElem = document.querySelectorAll('.cursor-hover-scale');
   const cursorScaleElems = document.querySelectorAll('.cursor-hs-scale');
 
@@ -29,4 +29,4 @@ export default function addCHScaleEvents() {
       tween.reverse();
     });
   }
-}
+}());

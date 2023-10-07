@@ -18,9 +18,7 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Google fonts ends -->
-
-	<!-- Font awesome kit -->
-	<script src="https://kit.fontawesome.com/efb6dbae73.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 	<!-- local style import -->
 	<link rel="stylesheet" href="styles/style.css">
@@ -32,10 +30,26 @@
 		<div class="cursor-hover-scale rounded-circle d-none d-lg-block"></div>
 	</aside>
 
+	<!-- || Component - Scroll to top btn anim -->
+	<aside class="position-fixed z-3 scroll-to-top-btn-anim cursor-hs-scale">
+		<button type="button"
+			class="w-100 h-100 d-flex justify-content-center align-items-center border border-2 border-secondary rounded-circle">
+			<span class="material-icons fw-semibold">
+				expand_less
+			</span>
+		</button>
+	</aside>
+
+	<!-- || Component - loader full wh anim -->
+	<aside
+		class="position-fixed vw-100 vh-100 d-flex justify-content-center align-items-center bg-white loader-full-wh-anim">
+		<div class="cfs-13 cfs-lg-20 fw-light text-uppercase opacity-0 loader-fw-ha-st">Loading</div>
+	</aside>
+
 	<!-- || Header -->
-	<header>
-		<!-- || Navbar -->
-		<nav class="navbar navbar-expand-lg bg-body shadow-sm navbar-responsive-menu-center">
+	<header class="sticky-header-top-anim">
+		<!-- || Component - Navbar responsive manu center -->
+		<nav class="navbar navbar-expand-lg bg-body navbar-responsive-menu-center">
 			<div class="container-lg navbar-rmc-container">
 				<a href="/" class="navbar-brand cursor-hs-scale navbar-rmc-brand cursor-hs-scale">
 					<h1 class="visually-hidden">Kindled</h1>
@@ -50,7 +64,7 @@
 
 				<div class="collapse navbar-collapse navbar-rmc-collapse" id="navbarSupportedContent">
 					<!-- || Nav -->
-					<ul class="navbar-nav me-auto navbar-rmc-navbar">
+					<ul class="navbar-nav me-auto mx-xxl-auto navbar-rmc-navbar">
 						<li class="nav-item navbar-rmc-nav-item">
 							<a class="nav-link active text-uppercase fw-semibold cfs-13 cursor-hs-scale ls-normal navbar-rmc-nav-link"
 								aria-current="page" href="">
@@ -88,7 +102,7 @@
 							</a>
 						</li>
 					</ul>
-					<!-- || Search form -->
+					<!-- || Component - Form search anim -->
 					<div class="form-search-anim" role="search">
 						<button class="d-block h-100 bg-body p-0 form-sa-control overflow-hidden" type="button">
 							<div class="d-flex align-items-center justify-content-center w-100 h-100 form-sa-control-icon-wr-search">
@@ -120,7 +134,7 @@
 		<article>
 			<!-- || Block - Hero lead image animation -->
 			<div class="position-relative hero-lead-img-anim">
-				<div class="container">
+				<div class="container animate__animated animate__delay-2s anim-gsap" data-animation="animate__fadeInUp">
 					<div class="row mb-4 mb-xl-5 align-items-center justify-content-between">
 						<div class="col-lg-8">
 							<h2 class="mb-0 display-1 cfs-xl-85 fw-bold text-uppercase ls-wide hero-lia-tittle">High End <span
@@ -146,7 +160,8 @@
 					<div class="container mb-5">
 						<div class="row">
 							<div class="col-lg-5">
-								<div class="ms-lg-5 ps-xl-4 me-xl-3">
+								<div class="ms-lg-5 ps-xl-4 ps-xxl-5 me-xl-3 animate__animated animate__delay-2s anim-gsap"
+									data-animation="animate__fadeInUp">
 									<p class="text-secondary lh-md fw-light mb-4 pb-2">Through our years of experience, we've also learned
 										that
 										while
@@ -165,7 +180,7 @@
 					</div>
 
 					<div class="hero-lia-img-col">
-						<div class="w-100 h-100">
+						<div class="w-100 h-100 animate__animated animate__delay-2s anim-gsap" data-animation="animate__slideInUp">
 							<img src="images/hero.jpg" alt="Project Discussion" class="w-100 h-100 object-fit-cover">
 						</div>
 					</div>
@@ -183,20 +198,22 @@
 							<div class="mb-3">
 								<h2 class="visually-hidden">Our Benefits</h2>
 								<span
-									class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium"
-									aria-hidden="true">Our
+									class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium c-opacity-0 animate__animated anim-gsap"
+									data-animation="animate__fadeIn" aria-hidden="true">Our
 									Benefits</span>
 							</div>
-							<h3 class="h1 fw-semibold lh-sm">Our Team of Dedicated Digital Professionals.</h3>
+							<h3 class="h1 fw-semibold lh-sm anim-forward-flip-in-x anim-gsap" data-animation="anim-ff-in-x-animate">
+								Our Team of Dedicated Digital Professionals.</h3>
 						</div>
 
 						<div class="col-md-10 col-lg-6 col-xl-5">
-							<p class="text-secondary lh-md fw-light mb-5">Through our years of experience, we’ve also learned that
-								while
-								each channel has its own set of
-								advantages, they all work best when strategically paired with other channels.</p>
-							<a class="cfs-14 link-primary link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-capitalize d-inline-block ps-4 pe-2 cursor-hs-scale link-circle-bg-icon"
-								href="/"><span>View All Our News</span><svg class="d-inline-block ps-1"
+							<p class="text-secondary lh-md fw-light mb-5 anim-swipe-in-tb anim-gsap"
+								data-animation="anim-si-tb-animate">Through our years of experience, we’ve also
+								learned that
+								while each channel has its own set of advantages, they all work best when strategically paired with
+								other channels.</p>
+							<a class="cfs-14 link-primary link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-capitalize d-inline-block ps-4 pe-2 cursor-hs-scale link-circle-bg-icon c-opacity-0 animate__animated anim-gsap"
+								href="/" data-animation="animate__fadeIn"><span>View All Our News</span><svg class="d-inline-block ps-1"
 									xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22">
 									<path
 										d="m241.615-258.693-31.614-31.615 413.923-414.308H241.308v-45.383h459.999v459.998h-45.384v-382.615L241.615-258.693Z" />
@@ -207,32 +224,37 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-6 image-overlap-tile company-til-image-ot">
 							<div class="image-ot-wr">
-								<div class="image-ot-img-1-wr">
+								<div class="image-ot-img-1-wr anim-swipe-in-lr-zb anim-gsap" data-animation="anim-si-lr-zb-animate">
 									<img class="w-100" src="images/company/discussion-room.jpg"
 										alt="An empty discussion room with a board">
 								</div>
 
-								<div class="image-ot-img-2-wr">
+								<div class="image-ot-img-2-wr anim-swipe-in-lr-zb anim-gsap" data-animation="anim-si-lr-zb-animate">
 									<img class="w-100" src="images/company/employee.jpg" alt="A model employee">
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-5">
-							<h3 class="h1 fw-semibold lh-sm mb-5 pb-3">Unlock Revenue Growth for Your Business.</h3>
+							<h3 class="h1 fw-semibold lh-sm mb-5 pb-3 anim-forward-flip-in-x anim-gsap"
+								data-animation="anim-ff-in-x-animate">Unlock Revenue Growth for Your Business.
+							</h3>
 							<div class="ms-3 ps-5">
-								<div class="row align-items-center mb-4 pb-2">
+								<div class="row align-items-center mb-4 pb-2 c-opacity-0 animate__animated anim-gsap"
+									data-animation="animate__fadeIn">
 									<div class="col-auto company-til-thumbnail-wr">
 										<img class="w-100" src="images/company/company-icon1.png" alt="Icon">
 									</div>
 									<div class="col">
 										<h4 class="fs-6 cfs-xl-20 mb-3">High Standerd</h4>
-										<p class="cfs-15 text-secondary fw-light lh-md">Molestiae nulla labore ipsam maiores, perferendis qui
+										<p class="cfs-15 text-secondary fw-light lh-md">Molestiae nulla labore ipsam maiores, perferendis
+											qui
 											quis blanditiis nihil dignissimos!</p>
 									</div>
 								</div>
 
-								<div class="row align-items-center">
+								<div class="row align-items-center c-opacity-0 animate__animated anim-gsap"
+									data-animation="animate__fadeIn">
 									<div class="col-auto company-til-thumbnail-wr">
 										<img class="w-100" src="images/company/company-icon-2.png" alt="Icon">
 									</div>
@@ -327,22 +349,26 @@
 						<div class="col-lg-7">
 							<div class="mb-3">
 								<span
-									class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium"
-									aria-hidden="true">Featured Services</span>
+									class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium c-opacity-0 animate__animated anim-gsap"
+									data-animation="animate__fadeIn" aria-hidden="true">Featured Services</span>
 							</div>
 
-							<h2 class="h1 fw-semibold lh-base">Our Services</h2>
+							<h2 class="h1 fw-semibold lh-base anim-forward-flip-in-x anim-gsap" data-animation="anim-ff-in-x-animate">
+								Our Services</h2>
 						</div>
 
 						<div class="col-lg-5 col-xl-4">
-							<p class="fw-light text-secondary lh-md">Inventore repellendus officiis asperiores saepe ratione labore
+							<p class="fw-light text-secondary lh-md c-opacity-0 animate__animated anim-gsap"
+								data-animation="animate__fadeIn">
+								Inventore repellendus officiis asperiores saepe ratione labore
 								alias in nemo culpa dolorem? Odit animi.</p>
 						</div>
 					</div>
 
 					<div class="row row-cols-1 row-cols-lg-3 gy-5">
 						<div class="col">
-							<div class="border border-1 rounded-1 card-lead-icon">
+							<div class="border border-1 rounded-1 card-lead-icon c-opacity-0 animate__animated anim-gsap"
+								data-animation="animate__fadeIn">
 								<div class="pb-3 mb-4 card-li-icon-wr"><img class="w-100" src="images/company/company-icon1.png"
 										alt="Icon 1">
 								</div>
@@ -367,7 +393,9 @@
 						</div>
 
 						<div class="col">
-							<div class="border border-1 rounded-1 card-lead-icon">
+							<div
+								class="border border-1 rounded-1 card-lead-icon c-opacity-0 animate__animated anim-gsap animate__delay-1s"
+								style="--animate-delay: .3s" data-animation="animate__fadeIn">
 								<div class="pb-3 mb-4 card-li-icon-wr"><img class="w-100" src="images/company/company-icon-2.png"
 										alt="Icon 1">
 								</div>
@@ -392,7 +420,9 @@
 						</div>
 
 						<div class="col">
-							<div class="border border-1 rounded-1 card-lead-icon">
+							<div
+								class="border border-1 rounded-1 card-lead-icon c-opacity-0 animate__animated anim-gsap animate__delay-1s"
+								style="--animate-delay: .6s" data-animation="animate__fadeIn">
 								<div class="pb-3 mb-4 card-li-icon-wr"><img class="w-100" src="images/company/company-icon3.png"
 										alt="Icon 1">
 								</div>
@@ -420,12 +450,12 @@
 			</section>
 
 			<!-- || Block - Projects cards scrollable  -->
-			<section class="mb-5 projects-cards-scrollable">
-				<div class="container">
+			<section class="mb-5 overflow-hidden projects-cards-scrollable">
+				<div class="container-fluid">
 					<h2 class="visually-hidden">Projects</h2>
 
 					<div class="row gy-5 gx-5 row-cols-1 flex-lg-nowrap overflow-x-hidden projects-cs-ctr">
-						<div class="col col-lg-6 position-relative projects-cs-project">
+						<div class="col col-lg-6 position-relative ms-lg-5 projects-cs-project">
 							<div class="card-img-footer">
 								<div class="mb-4">
 									<a class="d-block stretched-link cursor-hs-scale" href="#"><img class="w-100"
@@ -631,15 +661,16 @@
 				<div class="container">
 					<div class="mb-3 text-center">
 						<span
-							class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium"
-							aria-hidden="true">Testimonials</span>
+							class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium c-opacity-0 animate__animated anim-gsap"
+							data-animation="animate__fadeIn" aria-hidden="true">Testimonials</span>
 					</div>
 
 					<h2 class="visually-hidden">Testimonials</h2>
 
-					<h3 class="text-center fw-semibold h1 pb-5">What people Says?</h3>
+					<h3 class="text-center fw-semibold h1 pb-5 anim-forward-flip-in-x anim-gsap"
+						data-animation="anim-ff-in-x-animate">What people Says?</h3>
 
-					<div class="row gy-5 tm-ss-tm-row">
+					<div class="row gy-5 tm-ss-tm-row c-opacity-0 animate__animated anim-gsap" data-animation="animate__fadeIn">
 						<div class="col-lg-5 pb-3">
 							<div class="mx-auto position-relative tm-ss-img-frame-ctr">
 								<div
@@ -671,7 +702,8 @@
 											</span>
 										</div>
 
-										<p class="cfs-18 cfs-xl-24 lh-base mb-5">I have been hiring people in this space for a number of years and I
+										<p class="cfs-18 cfs-xl-24 lh-base mb-5">I have been hiring people in this space for a number of
+											years and I
 											have never seen this level of
 											professionalism. It really feels like you are working with a team that can get the job done.</p>
 
@@ -698,7 +730,8 @@
 											</span>
 										</div>
 
-										<p class="cfs-18 cfs-xl-24 lh-base mb-5">I have been hiring people in this space for a number of years and I
+										<p class="cfs-18 cfs-xl-24 lh-base mb-5">I have been hiring people in this space for a number of
+											years and I
 											have never seen this level of
 											professionalism. It really feels like you are working with a team that can get the job done.</p>
 
@@ -732,22 +765,27 @@
 					<hr class="border-top border-secondary mb-5 pb-5">
 
 					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center gy-5">
-						<div class="col">
+						<div class="col c-opacity-0 animate__animated anim-gsap" data-animation="animate__fadeIn">
 							<p class="text-center fw-800 lh-1 tm-ss-stat-count tm-ss-stat-count-stroke">16</p>
 							<h4 class="text-center h6 mb-5 mb-xl-4">Years of Experience</h4>
 						</div>
 
-						<div class="col">
-							<p class="text-center fw-800 lh-1 tm-ss-stat-count">4<span class="fw-semibold tm-ss-stat-count-text">k</span></p>
+						<div class="col c-opacity-0 animate__animated anim-gsap animate__delay-1s" style="--animate-delay: .3s"
+							data-animation="animate__fadeIn">
+							<p class="text-center fw-800 lh-1 tm-ss-stat-count">4<span
+									class="fw-semibold tm-ss-stat-count-text">k</span></p>
 							<h4 class="text-center h6 mb-5 mb-xl-4">Projects Completed</h4>
 						</div>
 
-						<div class="col">
-							<p class="text-center fw-800 lh-1 tm-ss-stat-count tm-ss-stat-count-stroke">9<span class="fw-semibold tm-ss-stat-count-text">k</span></p>
+						<div class="col c-opacity-0 animate__animated anim-gsap animate__delay-1s" style="--animate-delay: .6s"
+							data-animation="animate__fadeIn">
+							<p class="text-center fw-800 lh-1 tm-ss-stat-count tm-ss-stat-count-stroke">9<span
+									class="fw-semibold tm-ss-stat-count-text">k</span></p>
 							<h4 class="text-center h6 mb-5 mb-xl-4">Happy Customers</h4>
 						</div>
 
-						<div class="col">
+						<div class="col c-opacity-0 animate__animated anim-gsap animate__delay-1s" style="--animate-delay: .9s"
+							data-animation="animate__fadeIn">
 							<p class="text-center fw-800 lh-1 tm-ss-stat-count">12</p>
 							<h4 class="text-center h6">Awards Winning</h4>
 						</div>
@@ -756,21 +794,22 @@
 			</section>
 
 			<!-- || Block - Blog link card list -->
-			<section class="blog-link-card-list">
+			<section class="bg-body blog-link-card-list">
 				<div class="container">
 					<div class="row justify-content-between align-items-center gy-4 mb-5">
 						<div class="col-lg-auto">
 							<div class="mb-3">
 								<span
-									class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium"
-									aria-hidden="true">Our Blog</span>
+									class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal fw-medium c-opacity-0 animate__animated anim-gsap"
+									data-animation="animate__fadeIn" aria-hidden="true">Our Blog</span>
 							</div>
-							<h2 class="h1 fw-semibold">Latest News</h2>
+							<h2 class="h1 fw-semibold anim-forward-flip-in-x anim-gsap" data-animation="anim-ff-in-x-animate">Latest
+								News</h2>
 						</div>
 
 						<div class="col-lg-auto">
-							<a class="cfs-14 link-primary link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-capitalize d-inline-block ps-4 pe-2 cursor-hs-scale link-circle-bg-icon"
-								href="/"><span>View All Our News</span><svg class="d-inline-block ps-1"
+							<a class="cfs-14 link-primary link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-capitalize d-inline-block ps-4 pe-2 cursor-hs-scale link-circle-bg-icon c-opacity-0 animate__animated anim-gsap"
+								data-animation="animate__fadeIn" href="/"><span>View All Our News</span><svg class="d-inline-block ps-1"
 									xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22">
 									<path
 										d="m241.615-258.693-31.614-31.615 413.923-414.308H241.308v-45.383h459.999v459.998h-45.384v-382.615L241.615-258.693Z" />
@@ -780,7 +819,8 @@
 
 					<div class="row row-cols-1 row-cols-lg-2 gy-5 blog-lcl-card-ctr">
 						<div class="col">
-							<div class="border rounded-3 p-3 py-xl-4 ps-xl-4">
+							<div class="border rounded-3 p-3 py-xl-4 ps-xl-4 c-opacity-0 animate__animated anim-gsap"
+								data-animation="animate__fadeIn">
 								<div class="row gy-4 align-items-center gx-lg-5 p-xl-2">
 									<div class="col-md-5 align-self-lg-stretch">
 										<div class="position-relative h-100 blog-lcl-card-img-relative-wr">
@@ -791,7 +831,8 @@
 
 									<div class="col-md-7 align-self-center ps-xl-5">
 										<div class="mb-3 cfs-12 text-secondary ls-base"><span>AUGUST 6, 2022</span></div>
-										<h3 class="cfs-18 cfs-xl-24 me-5 me-xl-0 lh-base mb-3">Free advertising for your online business.</h3>
+										<h3 class="cfs-18 cfs-xl-24 me-5 me-xl-0 lh-base mb-3">Free advertising for your online business.
+										</h3>
 										<div class="mb-3 mb-xl-0">
 											<a href="#"
 												class="text-primary d-inline-block rounded-1 bg-secondary-subtle px-3 py-2 cfs-13 text-decoration-none blog-lcl-tag-link">Marketing</a>
@@ -804,7 +845,9 @@
 						</div>
 
 						<div class="col">
-							<div class="border rounded-3 p-3 py-xl-4 ps-xl-4">
+							<div
+								class="border rounded-3 p-3 py-xl-4 ps-xl-4 c-opacity-0 animate__animated anim-gsap animate__delay-1s"
+								data-animation="animate__fadeIn" style="--animate-delay: .3s">
 								<div class="row gy-4 align-items-center gx-lg-5 p-xl-2">
 									<div class="col-md-5 align-self-lg-stretch">
 										<div class="position-relative h-100 blog-lcl-card-img-relative-wr">
@@ -832,7 +875,8 @@
 		</article>
 	</main>
 
-	<footer class="bg-white footer-resp-cols-lead">
+	<!-- || Block - Footer responsive cols lead -->
+	<footer class="bg-white position-relative z-n1 footer-resp-cols-lead">
 		<div class="container">
 			<h2 class="visually-hidden">Footer</h2>
 			<!-- || Component - Banner lg text stroke -->
@@ -885,7 +929,7 @@
 					<h3 class="h6 cfs-xl-20 mb-3">Newsletter</h3>
 					<form class="row border-bottom form-ns-minimal g-0">
 						<div class="col">
-							<input type="email" class="form-control bg-white border-0 w-100 cfs-14 px-0 py-2" id="email"
+							<input type="email" class="form-control bg-white border-0 w-100 cfs-14 px-0 py-2 shadow-none" id="email"
 								placeholder="Type Your Email">
 						</div>
 						<button type="submit" class="col-auto btn"><i class="fa-solid fa-arrow-right"></i></button>
@@ -918,11 +962,12 @@
 		</div>
 	</footer>
 
-	<!-- gsap starts -->
+	<!-- gsap scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-	<!-- gsap ends -->
+
+	<!-- Font awesome kit -->
+	<script src="https://kit.fontawesome.com/efb6dbae73.js" crossorigin="anonymous"></script>
 	<script type="module" src="scripts/main.js"></script>
 </body>
 

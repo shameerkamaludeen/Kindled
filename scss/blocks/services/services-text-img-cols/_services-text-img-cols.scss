@@ -1,4 +1,4 @@
-/* Block - Services text img cols
+/* || Block - Services text img cols
    ========================================================================== */
 
 // 1. Features
@@ -7,8 +7,6 @@
 // Card over an image with background pattern
 
 @use 'sass:map';
-@import '../../../components/banner/banner-roll-color-change/banner-roll-color-change';
-@import '../../../components/card/card-lead-icon-bg/card-lead-icon-bg';
 
 .services-text-img-cols {
   margin-bottom: 120px;

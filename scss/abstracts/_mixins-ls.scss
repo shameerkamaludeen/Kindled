@@ -1,9 +1,6 @@
 // Abstracts - mixins
 // =============================================================================
 
-@import '../abstracts/variables-ls';
-@import '../base/sitewide';
-
 // || Animation
 
 @mixin inline-animation($duration: 0.5s,
@@ -219,5 +216,23 @@
 
   @if $v-h-center {
     @extend %inline-flex-v-center-h-center;
+  }
+}
+
+// || Animation
+
+@mixin make-animation($duration: 0.5s,
+  $animation-fill-mode: false) {
+  $name: anim-#{unique-id()};
+
+  @keyframes #{$name} {
+    @content;
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+
+  @if $animation-fill-mode {
+    animation-fill-mode: $animation-fill-mode;
   }
 }

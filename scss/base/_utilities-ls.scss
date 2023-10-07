@@ -4,6 +4,7 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/utilities";
 
+// || Bootstrap map customization
 $utilities: map-merge(
   $utilities, (
     "line-height": map-merge(
@@ -42,3 +43,8 @@ $utilities: map-merge(
     )
   ),
 );
+
+// Local general rules
+.c-opacity-0 {
+  opacity: 0;
+}

@@ -1,0 +1,18 @@
+/* || Component - Anim swipe in tb
+   ========================================================================== */
+
+// 1. Features
+// Animate swipe in from top to bottom
+// 2. Notes
+// This component is 'anim-gsap' dependable 
+
+.anim-swipe-in-tb {
+  overflow: hidden;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path .8s;
+}
+
+// Class use to select element for animation
+.anim-si-tb-animate {
+  clip-path: inset(0 0 0 0);
+}

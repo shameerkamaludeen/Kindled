@@ -1,0 +1,28 @@
+/* || Component - Anim forward flip in x
+   ========================================================================== */
+
+// 1. Features
+// Animate forward flip in x direction with scroll trigger
+// 2. Notes
+// This component is 'anim-gsap' dependable 
+
+.anim-forward-flip-in-x {
+  transform-style: preserve-3d;
+  transform-origin: 50% 0%;
+  opacity: 0;
+}
+
+.anim-ff-in-x-animate {
+
+  @include make-animation($duration: .8s,
+    $animation-fill-mode: both) {
+    from {
+      transform: perspective(400px) translate3d(0px, 50px, -50px) rotateX(-45deg) scale(0.95);
+    }
+
+    to {
+      transform: perspective(400px) translate3d(0px, 0px, 0px) rotateX(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+}

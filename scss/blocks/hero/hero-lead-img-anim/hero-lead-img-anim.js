@@ -1,7 +1,9 @@
 /* || Block - Hero lead image animation
    ========================================================================== */
 
-export default function addHeroLIAEvents() {
+import '../../../components/animation/anim-gsap/anim-gsap.js'
+
+(function () {
   const cirlceElems = document.querySelectorAll('.hero-lia-circle-img-wr');
 
   if (!cirlceElems.length) {
@@ -48,4 +50,4 @@ export default function addHeroLIAEvents() {
   cirlceElems[0].addEventListener('mouseleave', function (e) {
     animate(e);
   });
-}
+}());
