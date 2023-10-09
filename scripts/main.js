@@ -3,13 +3,13 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // Other import
 // home
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 import '../scss/components/loader/loader-full-wh-anim/loader-full-wh-anim.js';
 import '../scss/components/cursor/cursor-hover-scale/cursor-hover-scale.js';
-import '../scss/components/go-to-top/scroll-to-top-btn-anim/scroll-to-top-btn-anim.js';
 import '../scss/components/sticky/sticky-header-top-anim/sticky-header-top-anim.js';
 import '../scss/components/navigation/navbar-responsive-menu-center/navbar-responsive-menu-center.js';
+import '../scss/components/scroll/scroll-smoother-gsap/scroll-smoother-gsap.js';
 import '../scss/blocks/hero/hero-lead-img-anim/hero-lead-img-anim.js';
 import '../scss/blocks/company/company-tag-img-lead/company-tag-img-lead.js'
 import '../scss/components/banner/banner-roll-full-width/banner-roll-full-width.js';
