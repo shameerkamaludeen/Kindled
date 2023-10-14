@@ -12,6 +12,8 @@
   padding-top: 30px;
 }
 
+.blog-lcl-card {}
+
 .blog-lcl-tag-link {
   @include link-basic($color: false,
     $color-visited: false,

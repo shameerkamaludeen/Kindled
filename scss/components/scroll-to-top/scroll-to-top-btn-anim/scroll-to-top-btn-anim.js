@@ -6,20 +6,13 @@
 // 2. Notes:
 // ScrollSmoother object also require in 'scroll-smoother-gsap' component
 import { breakpoints } from "../../../../scripts/variables.js";
+import '../../../../scripts/initialize-scroll-smoother.js';
 
 (function () {
   const scrollBtnElem = document.querySelector('.scroll-to-top-btn-anim');
   if (typeof (scrollBtnElem) == 'undefined' || scrollBtnElem == null || window.innerWidth < breakpoints.lg) {
     return;
   }
-
-  let smoother = ScrollSmoother.create({
-    wrapper: 'scroll-smoother-gsap',
-    content: '.ss-gsap-content',
-    effects: false,
-    normalizeScroll: true,
-    smooth: 2
-  });
 
   scrollBtnElem.addEventListener('click', () => {
     gsap.to(smoother, {

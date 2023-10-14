@@ -1,0 +1,29 @@
+/* || Block - Stats stroke anim
+   ========================================================================== */
+
+// 1. Features
+// Stats with stroke and animation
+
+.stats-stroke-anim {
+  padding-bottom: 120px;
+  margin-bottom: 120px;
+}
+
+.stats-sa-stat-container {}
+
+.stats-sa-count {
+  font-size: 80px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 120px;
+  }
+}
+
+.stats-sa-count-span {
+  font-size: 80px;
+}
+
+.stats-sa-count-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px $primary;
+}

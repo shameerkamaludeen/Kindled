@@ -17,12 +17,15 @@
 
 // || Block - Hero lead image animation
 @import '../components/button/btn-capsule-shape-icon/btn-capsule-shape-icon';
+@import '../components/modal/modal-youtube-bs/modal-youtube-bs';
 @import '../components/animation/anim-gsap/anim-gsap';
+@import '../components/animation/anim-slide-in-up/anim-slide-in-up';
 @import '../blocks/hero/hero-lead-img-anim/hero-lead-img-anim';
 
 // || Block - Company tag img lead
 @import '../components/image/image-overlap-tile/image-overlap-tile';
 @import '../components/link/link-circle-bg-icon/link-circle-bg-icon';
+@import '../components/miscellaneous/js-opacity-zero/js-opacity-zero';
 @import '../components/animation/anim-forward-flip-in-x/anim-forward-flip-in-x';
 @import '../components/animation/anim-swipe-in-tb/anim-swipe-in-tb';
 @import '../components/animation/anim-swipe-in-lr-zb/anim-swipe-in-lr-zb';
@@ -43,6 +46,7 @@
 @import '../blocks/services/services-text-img-cols/services-text-img-cols';
 
 @import '../blocks/testimonial/tm-slider-stat/tm-slider-stat';
+@import '../blocks/stats/stats-stroke-anim/stats-stroke-anim';
 @import '../blocks/blog/blog-link-card-list/blog-link-card-list';
 
 // || Block - Footer responsive cols lead

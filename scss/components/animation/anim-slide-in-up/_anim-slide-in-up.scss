@@ -1,0 +1,27 @@
+/* || Component - Anim slide in up
+   ========================================================================== */
+
+.anim-slide-in-up {
+  opacity: 0;
+}
+
+.anim-si-up-delay-responsive {
+  @include media-breakpoint-up(md) {
+    animation-delay: 2s;
+  }
+}
+
+.anim-si-up-animate {
+  opacity: 1;
+
+  @include make-animation($duration: 1s,
+    $animation-fill-mode: both) {
+    from {
+      transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+      transform: translateZ(0);
+    }
+  }
+}

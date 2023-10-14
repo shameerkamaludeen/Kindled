@@ -9,12 +9,11 @@
 
 .tm-slider-stat {
   padding-top: 120px;
-  padding-bottom: 120px;
-  margin-bottom: 120px;
 }
 
-.tm-ss-tm-row {
+.tm-ss-main-cnt-ctr {
   margin-bottom: 75px;
+  --animate-delay: 0.3s
 }
 
 .tm-ss-img-frame-ctr {
@@ -50,21 +49,4 @@
 .tm-ss-swiper-btn {
   width: 50px;
   height: 50px;
-}
-
-.tm-ss-stat-count {
-  font-size: 80px;
-
-  @include media-breakpoint-up(xl) {
-    font-size: 120px;
-  }
-}
-
-.tm-ss-stat-count-text {
-  font-size: 80px;
-}
-
-.tm-ss-stat-count-stroke {
-  color: transparent;
-  -webkit-text-stroke: 1px $primary;
 }

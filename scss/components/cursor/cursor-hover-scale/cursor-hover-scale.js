@@ -4,6 +4,7 @@
 (function () {
   const cursorElem = document.querySelectorAll('.cursor-hover-scale');
   const cursorScaleElems = document.querySelectorAll('.cursor-hs-scale');
+  let isPlayedForward = false;
 
   if (typeof (cursorElem) == 'undefined' || cursorElem == null) {
     return;
@@ -18,15 +19,36 @@
     yTo(e.clientY - 4);
   });
 
+
+  let tween = gsap.to(cursorElem, {
+    duration: 0.3,
+    scale: 8,
+    opacity: 0.1,
+    paused: true
+  });
+
   // Mouse cursor scale and animation on hover interactive elems
   for (const cursorScaleElem of cursorScaleElems) {
-    let tween = gsap.to(cursorElem, { duration: 0.3, scale: 8, opacity: 0.1, paused: true });
     cursorScaleElem.addEventListener('mousemove', () => {
-      tween.play();
+      if (!isPlayedForward) {
+        tween.play();
+        isPlayedForward = true;
+      }
     });
 
     cursorScaleElem.addEventListener('mouseleave', () => {
-      tween.reverse();
+      if (isPlayedForward) {
+        tween.reverse();
+        isPlayedForward = false;
+      } else {
+        const interval = setInterval(() => {
+          if (isPlayedForward) {
+            isPlayedForward = false;
+            tween.reverse();
+            clearInterval(interval);
+          }
+        }, 200);
+      }
     });
   }
 }());
