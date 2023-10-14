@@ -13,7 +13,11 @@
 .loader-fw-ha-st {
   .st-letter {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
+
+    @include media-breakpoint-up(md) {
+      margin: 0 15px;
+    }
   }
 }
 

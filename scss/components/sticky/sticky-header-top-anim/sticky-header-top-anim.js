@@ -3,25 +3,41 @@
 
 (function () {
   const stickyHeaderElem = document.querySelector('.sticky-header-top-anim');
+  const navbarTogglerElem = document.querySelector('.navbar-toggler');
+  let scrollCheckStatus = true;
+
   // Return if the component not in the page
   if (typeof (stickyHeaderElem) == 'undefined' || stickyHeaderElem == null) {
     return;
   }
 
-  let lastScrollY = 0;
+  let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  // To check whether the scroll event fired due to menu click
+  if (typeof (navbarTogglerElem) != 'undefined' && navbarTogglerElem != null) {
+    navbarTogglerElem.addEventListener('click', function () {
+      scrollCheckStatus = false;
+      // The timeout is depend on the transition time of menu
+      setTimeout(() => {
+        scrollCheckStatus = true;
+      }, 400);
+    });
+  }
 
   window.addEventListener('scroll', () => {
-    // Scrolling down
-    if (window.scrollY > lastScrollY) {
-      animateInStickyHeader(false);
-      animateOutStickyHeader(true);
+    if (scrollCheckStatus) {
+      var st = window.scrollY || document.documentElement.scrollTop;
+      if (st > lastScrollTop) {
+        // Scrolling down
+        animateInStickyHeader(false);
+        animateOutStickyHeader(true);
+      } else if (st < lastScrollTop) {
+        // Scrolling up 
+        animateInStickyHeader(true);
+        animateOutStickyHeader(false);
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
     }
-    // Scrolling up 
-    else {
-      animateInStickyHeader(true);
-      animateOutStickyHeader(false);
-    }
-    lastScrollY = window.scrollY;
   });
 
   // Pass 'true' for animate in and 'false' for reverse it

@@ -222,7 +222,8 @@
 // || Animation
 
 @mixin make-animation($duration: 0.5s,
-  $animation-fill-mode: false) {
+  $animation-fill-mode: false,
+  $animation-delay: false) {
   $name: anim-#{unique-id()};
 
   @keyframes #{$name} {
@@ -231,6 +232,10 @@
 
   animation-name: $name;
   animation-duration: $duration;
+
+  @if $animation-delay {
+    animation-delay: $animation-delay;
+  }
 
   @if $animation-fill-mode {
     animation-fill-mode: $animation-fill-mode;

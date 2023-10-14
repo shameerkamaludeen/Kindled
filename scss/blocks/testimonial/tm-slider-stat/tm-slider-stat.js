@@ -1,7 +1,8 @@
 /* || Block - Testimonials slider statistics
    ========================================================================== */
 
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs';
+import '../../../components/miscellaneous/js-opacity-zero/js-opacity-zero.js';
 
 (function () {
   const swiper = new Swiper('.tm-ss-swiper', {

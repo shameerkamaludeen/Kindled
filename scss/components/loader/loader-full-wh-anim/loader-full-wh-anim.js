@@ -8,6 +8,8 @@ import { splitText } from "../../../../scripts/utilities.js";
   if (typeof (splitTextElem) == 'undefined' || splitTextElem == null) {
     return;
   }
+  document.querySelector('.loader-full-wh-anim').classList.remove('d-none');
+
   splitText(splitTextElem);
   // This is to fix the split and style apply delay 
   splitTextElem.classList.add('loader-fw-ha-st-op-1');

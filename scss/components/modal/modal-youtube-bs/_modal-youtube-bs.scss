@@ -1,0 +1,21 @@
+/* || Component - Modal youtube bs
+   ========================================================================== */
+
+// 1. Features
+// Modal Youtube with bootstrap
+
+.modal-youtube-bs {
+  --bs-modal-width: 680px;
+}
+
+.modal-yt-bs-content {
+  height: 480px;
+}
+
+// Require to initialize youtube using javascript
+.modal-yt-bs-iframe-wr {}
+
+// to override backdrop opacity of bootstrap
+.modal-yt-bs-backdrop {
+  --bs-backdrop-opacity: 0.8;
+}
