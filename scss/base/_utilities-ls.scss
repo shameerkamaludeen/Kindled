@@ -40,6 +40,17 @@ $utilities: map-merge(
       responsive: true,
       class: cfs,
       values: $custom-font-sizes
-    )
+    ),
+    "font-family": map-merge(
+      map-get($utilities, "font-family"), 
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "font-family"), "values"), (
+            sora: var(--font-sora),
+            playfair-display: var(--font-playfair-display)
+          ),
+        ),
+      ),
+    ),
   ),
 );

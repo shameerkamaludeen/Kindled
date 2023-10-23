@@ -5,6 +5,10 @@
   opacity: 0;
 }
 
+.anim-si-up-delay-2s {
+  animation-delay: 2s;
+}
+
 .anim-si-up-delay-responsive {
   @include media-breakpoint-up(md) {
     animation-delay: 2s;

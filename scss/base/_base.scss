@@ -1,6 +1,12 @@
 /* || Base - Base
    ========================================================================== */
 
+:root {
+  --font-sora: #{inspect($font-family-sora)};
+  --font-playfair-display: #{inspect($font-family-pd)};
+  --tertiary-600: #{inspect($tertiary-600)};
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }

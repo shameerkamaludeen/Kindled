@@ -4,6 +4,8 @@
 (function () {
   const cursorElem = document.querySelectorAll('.cursor-hover-scale');
   const cursorScaleElems = document.querySelectorAll('.cursor-hs-scale');
+  // Used to check whether animation complete to start another, this require 
+  // when multiple cursor scale elements placed in close  
   let isPlayedForward = false;
 
   if (typeof (cursorElem) == 'undefined' || cursorElem == null) {
@@ -29,7 +31,7 @@
 
   // Mouse cursor scale and animation on hover interactive elems
   for (const cursorScaleElem of cursorScaleElems) {
-    cursorScaleElem.addEventListener('mousemove', () => {
+    cursorScaleElem.addEventListener('mouseenter', () => {
       if (!isPlayedForward) {
         tween.play();
         isPlayedForward = true;

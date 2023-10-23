@@ -1,0 +1,32 @@
+/* || Component - Image foreground rt (roller text)
+   ========================================================================== */
+
+// 1. Features 
+// Two foreground roller texts and one amoung them is tlted slightly
+// Alternate image in the list of this component can be small height and 
+// grayscale effect on its hover
+
+.image-foreground-rt {}
+
+.image-fg-rt-sm {
+   height: 86%;
+   // To position bottom
+   top: 14%;
+
+   .image-fg-rt-img {
+      filter: grayscale(100%);
+      transition: filter .2s;
+
+      &:hover {
+         filter: grayscale(0);
+      }
+   }
+}
+
+.image-fg-rt-img {
+   object-position: top;
+}
+
+.image-fg-top-banner {
+   bottom: 55px;
+}

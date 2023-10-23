@@ -1,0 +1,47 @@
+/* || Component - Banner infinite roll
+   ========================================================================== */
+
+// 1. Requirements
+// data-roll-speed attribute
+// data-clone attribute
+// 2. Features
+// Can be placed in the Foreground of any container
+// Tilted option avarilable
+
+.banner-infinite-roll {}
+
+.banner-ir-shadow-sides {
+   &::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      pointer-events: none;
+      background: linear-gradient(to right, #f1f3f5, transparent 15%, transparent 85%, #f1f3f5);
+   }
+}
+
+.banner-ir-tilt-3 {
+   transform: rotate(-3deg);
+   width: calc(100% + 8px);
+   left: -5px;
+}
+
+.banner-ir-hover-display {
+   .banner-ir-fg-wr {
+      display: none;
+   }
+
+   &:hover {
+      .banner-ir-fg-wr {
+         display: block;
+      }
+   }
+}
+
+.banner-ir-text-stroke {
+   color: transparent;
+   -webkit-text-stroke: 0.5px $body-color;
+}

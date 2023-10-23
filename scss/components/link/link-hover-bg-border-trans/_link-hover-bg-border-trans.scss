@@ -1,0 +1,39 @@
+/* || Component - Link hover bg border trans
+   ========================================================================== */
+
+// 1. Features
+// large circle link with transition of border and background on hover
+
+.link-hover-bg-border-trans {
+  height: 160px;
+  width: 160px;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: tint-color($primary, 40%);
+  transition: border-color .4s;
+  position: relative;
+
+  &:hover {
+    border-color: transparent;
+
+    &::after {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 0%;
+    background-color: $tertiary;
+    transition: width .4s, height .4s;
+    border-radius: 50%;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
