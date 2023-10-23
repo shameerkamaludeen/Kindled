@@ -1,0 +1,22 @@
+/* || Component - Text lead list marker
+   =========================================================================== */
+
+// 1. Features
+// The text will have a leading marker like in the list item
+
+.text-lead-list-marker {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 3px);
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $primary;
+  }
+}

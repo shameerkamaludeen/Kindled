@@ -1,0 +1,17 @@
+/* || Component - Card tm rating msg profile
+   ========================================================================== */
+
+// 1. Features
+// Rating stars, message body and profile of individual
+
+.card-tm-rating-msg-profile {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.card-tm-rmp-profile-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: top;
+}

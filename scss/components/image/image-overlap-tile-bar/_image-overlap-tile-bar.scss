@@ -1,0 +1,29 @@
+/* || Component - Image overlap tile bar
+   ========================================================================== */
+
+// 1. Fedtures
+// A tile Image overlaped in a larger image along with vertical bar
+
+.image-overlap-tile-bar {
+  // The padding-bottom is based on 'image-otb-tile-img-wr' bottom property as to 
+  // center verticlly this component in its container 
+  padding-bottom: 50px;
+}
+
+.image-otb-wr {
+  width: 75%;
+  left: 25%;
+}
+
+.image-otb-bar {
+  width: 8px;
+  height: 180px;
+  left: -30px;
+}
+
+.image-otb-tile-img-wr {
+  width: 40%;
+  bottom: -50px;
+  // To honor its parent padding
+  padding-bottom: inherit;
+}

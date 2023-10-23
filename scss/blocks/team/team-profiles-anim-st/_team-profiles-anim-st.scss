@@ -1,0 +1,31 @@
+/* || Block - Team profile anim st (sticky header)
+   ========================================================================== */
+
+// 1. Features
+// Sticky tittle transition on sticky to a light color
+// Large tittle
+// Swiper profiles
+// Profile with image, name and tilted role animated in a roller inside image, 
+// the image in black and white transition to natural color on hover
+
+.team-profiles-anim-st {
+   padding-top: 120px;
+}
+
+.team-pa-st-tittle-ctr {
+   margin-bottom: 80px;
+}
+
+.team-pa-st-tittle {
+   opacity: 1;
+   transition: opacity 2s;
+   font-size: 30vw;
+
+   @include media-breakpoint-up(xl) {
+      font-size: 22.5rem;
+   }
+}
+
+.team-pa-st-tittle-pinned {
+   opacity: 0.05;
+}

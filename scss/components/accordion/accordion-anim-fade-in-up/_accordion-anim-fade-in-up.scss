@@ -1,0 +1,29 @@
+/* || Component - Accordion anim fade in up
+   ========================================================================== */
+
+// 1. Features
+// Accordion with positive and negative icon on opening and closing
+// Animation fade in up
+
+.accordion-anim-fade-in-up {}
+
+.acc-anim-fiu-btn {
+  &:not(.collapsed) {
+    background-color: transparent;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &::after {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M467.077-467.577H286.154v-25.846h180.923v-180.923h25.846v180.923h180.923v25.846H492.923v180.923h-25.846v-180.923Z"/></svg>');
+    background-size: 35px;
+    background-position: center;
+  }
+
+  &:not(.collapsed)::after {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M238.154-744v-25.846h483.692V-744H238.154Z"/></svg>');
+    background-position: top;
+  }
+}

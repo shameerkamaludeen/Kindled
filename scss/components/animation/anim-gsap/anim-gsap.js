@@ -5,8 +5,8 @@
   const animElems = gsap.utils.toArray('.anim-gsap');
   animElems.forEach(animElem => {
     const dataAnimation = animElem.getAttribute('data-animation-offset');
-    let start = 'top bottom-=150px';
-    if (dataAnimation != null && dataAnimation != '') {
+        let start = 'top bottom-=150px';
+    if (dataAnimation != null && typeof (dataAnimation) != 'undefined') {
       start = dataAnimation <= 0 ? 'top bottom' : 'top bottom-=' + dataAnimation + 'px';
     }
 

@@ -1,0 +1,40 @@
+/* || Block - Lead parallax bg sp (sides padding)
+   ========================================================================== */
+
+// 1. Features
+// Parallax bg
+// Side of parallax bg and lead block padded slightly
+
+.lead-parallax-bg-sp {}
+
+.lead-pbg-sp-parallax-ctr {
+  height: 200px;
+
+  @include media-breakpoint-up(md) {
+    height: 250px;
+  }
+}
+
+.lead-pbg-sp-parallax {
+  height: 100%;
+
+  @include media-breakpoint-up(sm) {
+    height: calc(100% + 200px);
+  }
+}
+
+.lead-pbg-sp-parallax-img {
+  height: 150%;
+  bottom: 33.35%;
+  object-position: center top;
+
+  @include media-breakpoint-up(sm) {
+    height: 200%;
+    bottom: 50%;
+  }
+}
+
+.lead-pbg-sp-cnt-ctr {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
