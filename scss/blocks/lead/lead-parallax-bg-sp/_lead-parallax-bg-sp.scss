@@ -38,3 +38,9 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
+.lead-pbg-sp-me-lg-6 {
+  @include media-breakpoint-up(lg) {
+    margin-right: 4.5rem !important;
+  }
+}

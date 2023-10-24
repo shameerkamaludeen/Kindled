@@ -6,6 +6,10 @@
 
 .card-hover-swap-elem {
   padding: 45px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 70px 0;
+  }
 }
 
 .card-hse-img-wr {

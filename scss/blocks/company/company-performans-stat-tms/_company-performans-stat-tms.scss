@@ -6,4 +6,19 @@
 
 .company-performans-stat-tms {
   padding: 80px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+  }
+}
+
+.company-ps-tms-gx-6 {
+  --bs-gutter-x: 4rem;
+}
+
+.company-ps-tms-stat-col {
+  @include media-breakpoint-up(lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

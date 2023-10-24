@@ -27,7 +27,7 @@ import { splitText } from "../../../../scripts/utilities.js";
   window.addEventListener('load', () => {
     gsap.to('.loader-full-wh-anim', {
       yPercent: -100,
-      delay: 2,
+      delay: 1.8,
       duration: 1,
       ease: 'power3.out',
       onComplete: () => { loaderTextAnim.kill(); }

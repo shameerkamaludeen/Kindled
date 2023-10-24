@@ -12,6 +12,10 @@
 
 .hero-tba-content-ctr {
   margin-bottom: 70px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 60px;
+  }
 }
 
 .hero-tba-banner-text-font {

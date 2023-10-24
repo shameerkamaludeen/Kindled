@@ -17,11 +17,11 @@ import '../../image/image-foreground-rt/image-foreground-rt.js';
          },
          768: {
             slidesPerView: 2.5,
-            spaceBetween: 30
+            spaceBetween: 20
          },
          992: {
-            slidesPerView: 3.5,
-            spaceBetween: 30
+            slidesPerView: 2.5,
+            spaceBetween: 50
          },
          1200: {
             slidesPerView: 5,
