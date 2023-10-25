@@ -8,6 +8,10 @@
 
 .hero-trans-banner-anim {
   padding-top: 180px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 215px;
+  }
 }
 
 .hero-tba-content-ctr {
@@ -15,6 +19,12 @@
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 60px;
+  }
+}
+
+.hero-tba-banner {
+  @include media-breakpoint-up(xl) {
+    height: 134px;
   }
 }
 

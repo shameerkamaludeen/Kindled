@@ -9,4 +9,8 @@
 
 .swiper-vh-profiles-loop {
    height: 430px;
+
+   @include media-breakpoint-up(xl) {
+      height: 300px;
+   }
 }

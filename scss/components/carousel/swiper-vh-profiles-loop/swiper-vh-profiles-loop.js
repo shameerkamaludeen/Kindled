@@ -23,9 +23,14 @@ import '../../image/image-foreground-rt/image-foreground-rt.js';
             slidesPerView: 2.5,
             spaceBetween: 50
          },
+         1024: {
+            slidesPerView: 3,
+            spaceBetween: 50
+         },
          1200: {
-            slidesPerView: 5,
-            spaceBetween: 30
+            slidesPerView: 4,
+            spaceBetween: 60,
+            centeredSlides: true,
          },
       }
    })

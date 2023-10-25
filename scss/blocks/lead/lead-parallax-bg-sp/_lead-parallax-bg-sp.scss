@@ -24,19 +24,20 @@
 }
 
 .lead-pbg-sp-parallax-img {
-  height: 150%;
-  bottom: 33.35%;
+  height: 200%;
+  // To animate bottom to top
+  bottom: 100%;
   object-position: center top;
-
-  @include media-breakpoint-up(sm) {
-    height: 200%;
-    bottom: 50%;
-  }
 }
 
 .lead-pbg-sp-cnt-ctr {
   padding-top: 80px;
   padding-bottom: 80px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .lead-pbg-sp-me-lg-6 {
