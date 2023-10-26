@@ -31,3 +31,4 @@ import '../scss/blocks/brand/brands-cards-list-responsive/brands-cards-list-resp
 import '../scss/blocks/lead/lead-parallax-bg-sp/lead-parallax-bg-sp.js';
 
 // Services page
+import '../scss/blocks/services/services-resp-cnt-img-pin/services-resp-cnt-img-pin.js';

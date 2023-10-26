@@ -1,0 +1,18 @@
+/* || Block - services-resp-cnt-img-pin (Services-responsive-content-image-pinning)
+   ========================================================================== */
+
+// 1. Features
+// Image and content column responsive
+// Lead
+// Pinning images on scroll on larger devices
+// Content transition to full opacity on scroll in larger devices
+
+.services-resp-cnt-img-pin {
+   padding: 100px 0;
+}
+
+.sr-cip-service-ctr {
+   &:not(:last-child) {
+      margin-bottom: 80px;
+   }
+}

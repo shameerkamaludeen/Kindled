@@ -27,3 +27,33 @@
 // || Block - Lead parallax bg sp (sides padding)
 // @import '../components/link/link-hover-bg-border-trans/link-hover-bg-border-trans';
 // @import '../blocks/lead/lead-parallax-bg-sp/lead-parallax-bg-sp';
+
+// || Block - services-resp-cnt-img-pin (Services-responsive-content-image-pinning)
+@import '../blocks/services/services-resp-cnt-img-pin/services-resp-cnt-img-pin';
+
+// || Block - Services text img cols
+// @import '../components/card/card-lead-icon-bg/card-lead-icon-bg';
+// @import '../blocks/services/services-text-img-cols/services-text-img-cols';
+
+// || Block - Service features aic ( accordian image component)
+// @import '../components/miscellaneous/js-opacity-zero/js-opacity-zero';
+// @import '../components/animation/anim-gsap/anim-gsap';
+// @import '../components/accordion/accordion-anim-fade-in-up/accordion-anim-fade-in-up';
+// @import '../blocks/services/service-features-aic/service-features-aic';
+
+// || Block - Services text img cols
+.services-tic-services {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+
+  .services-tic-card {
+    background: white;
+  }
+}
+
+// || Block - Service features aic ( accordian image component)
+.sf-aic-services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
