@@ -5,11 +5,19 @@
 // On hover replaces the visible element with invisible one along with animation
 
 .card-hover-swap-elem {
-  padding: 40px 0;
+  padding: 45px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 70px 0;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding: 80px 0;
+  }
 }
 
 .card-hse-img-wr {
-  max-width: 100px;
+  max-width: 120px;
   margin-left: auto;
   margin-right: auto;
 }

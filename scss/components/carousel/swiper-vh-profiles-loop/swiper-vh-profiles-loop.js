@@ -13,19 +13,29 @@ import '../../image/image-foreground-rt/image-foreground-rt.js';
       breakpoints: {
          576: {
             slidesPerView: 1.5,
-            spaceBetween: 10,
+            spaceBetween: 30,
          },
          768: {
             slidesPerView: 2.5,
             spaceBetween: 30
          },
          992: {
-            slidesPerView: 3.5,
-            spaceBetween: 30
+            slidesPerView: 2.5,
+            spaceBetween: 50
+         },
+         1024: {
+            slidesPerView: 3,
+            spaceBetween: 50
          },
          1200: {
+            slidesPerView: 4,
+            spaceBetween: 60,
+            centeredSlides: true,
+         },
+         1500: {
             slidesPerView: 5,
-            spaceBetween: 30
+            spaceBetween: 60,
+            centeredSlides: true,
          },
       }
    })

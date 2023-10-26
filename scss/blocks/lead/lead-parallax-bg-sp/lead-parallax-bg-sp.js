@@ -12,7 +12,7 @@
     scrollTrigger: {
       trigger: parallaxElem,
       start: 'top bottom',
-      end: 'bottom top',
+      end: 'top top',
       scrub: true,
       invalidateOnRefresh: true
     },
