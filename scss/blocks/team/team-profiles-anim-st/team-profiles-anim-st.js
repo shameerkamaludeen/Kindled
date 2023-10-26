@@ -5,6 +5,9 @@ import '../../../components/carousel/swiper-vh-profiles-loop/swiper-vh-profiles-
 
 (function () {
    const teamProfilesElem = document.querySelector('.team-profiles-anim-st');
+   if (typeof (teamProfilesElem) == 'undefined' || teamProfilesElem == null) {
+      return;
+   }
    const tittleElem = teamProfilesElem.querySelector('.team-pa-st-tittle');
    ScrollTrigger.create({
       trigger: tittleElem,
