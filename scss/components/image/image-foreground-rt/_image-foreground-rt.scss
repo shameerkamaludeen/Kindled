@@ -8,18 +8,26 @@
 
 .image-foreground-rt {}
 
-.image-fg-rt-sm {
-   height: 86%;
-   // To position bottom
-   top: 14%;
+.image-fg-rt-hover-display {
+   .image-fg-rt-banner {
+      opacity: 0;
+      transition: opacity .3s;
+   }
 
-   .image-fg-rt-img {
-      filter: grayscale(100%);
-      transition: filter .2s;
-
-      &:hover {
-         filter: grayscale(0);
+   &:hover {
+      .image-fg-rt-banner {
+         opacity: 1;
       }
+   }
+}
+
+// Grayscale image
+.image-fg-rt-gs {
+   filter: grayscale(100%);
+   transition: filter .3s;
+
+   &:hover {
+      filter: grayscale(0);
    }
 }
 
@@ -27,6 +35,10 @@
    object-position: top;
 }
 
-.image-fg-top-banner {
+.image-fg-rt-img-sm {
+   transform: translateY(60px);
+}
+
+.image-fg-rt-banner-top {
    bottom: 55px;
 }

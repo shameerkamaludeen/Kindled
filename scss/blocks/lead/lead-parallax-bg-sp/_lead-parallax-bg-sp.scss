@@ -40,8 +40,6 @@
   }
 }
 
-.lead-pbg-sp-me-lg-6 {
-  @include media-breakpoint-up(lg) {
-    margin-right: 4.5rem !important;
-  }
+.lead-pbg-sp-cnt-bg {
+  margin-left: -1240px;
 }
