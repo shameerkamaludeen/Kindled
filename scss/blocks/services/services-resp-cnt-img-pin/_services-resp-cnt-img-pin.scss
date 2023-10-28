@@ -30,5 +30,36 @@
 .sr-cip-service-ctr {
    &:not(:last-child) {
       margin-bottom: 80px;
+
+      @include media-breakpoint-up(lg) {
+         margin-bottom: 0;
+      }
+   }
+}
+
+.sr-cip-pin-wr {
+   @include media-breakpoint-up(lg) {
+      height: 100vh;
+   }
+}
+
+.sr-cip-img-wr {
+   transition: opacity .4s linear;
+}
+
+// Object position left
+.sr-cip-img-op-left {
+   object-position: left;
+}
+
+// Object position center
+.sr-cip-img-op-center {
+   object-position: center;
+}
+
+.sr-cip-px-xxl-7 {
+   @include media-breakpoint-up(xxl) {
+      padding-right: 6rem !important;
+      padding-left: 6rem !important;
    }
 }
