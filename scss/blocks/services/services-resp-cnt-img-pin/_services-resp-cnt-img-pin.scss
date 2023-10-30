@@ -1,0 +1,65 @@
+/* || Block - services-resp-cnt-img-pin (Services-responsive-content-image-pinning)
+   ========================================================================== */
+
+// 1. Features
+// Image and content column responsive
+// Lead
+// Pinning images on scroll on larger devices
+// Content transition to full opacity on scroll in larger devices
+
+.services-resp-cnt-img-pin {
+   padding: 100px 0;
+}
+
+.sr-cip-container {
+   max-width: 540px;
+   margin-left: auto;
+   margin-right: auto;
+
+   @include media-breakpoint-up(md) {
+      max-width: 720px;
+   }
+
+   @include media-breakpoint-up(lg) {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+   }
+}
+
+.sr-cip-service-ctr {
+   &:not(:last-child) {
+      margin-bottom: 80px;
+
+      @include media-breakpoint-up(lg) {
+         margin-bottom: 0;
+      }
+   }
+}
+
+.sr-cip-pin-wr {
+   @include media-breakpoint-up(lg) {
+      height: 100vh;
+   }
+}
+
+.sr-cip-img-wr {
+   transition: opacity .4s linear;
+}
+
+// Object position left
+.sr-cip-img-op-left {
+   object-position: left;
+}
+
+// Object position center
+.sr-cip-img-op-center {
+   object-position: center;
+}
+
+.sr-cip-px-xxl-7 {
+   @include media-breakpoint-up(xxl) {
+      padding-right: 6rem !important;
+      padding-left: 6rem !important;
+   }
+}

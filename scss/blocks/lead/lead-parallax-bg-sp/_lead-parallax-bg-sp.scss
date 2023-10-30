@@ -5,7 +5,9 @@
 // Parallax bg
 // Side of parallax bg and lead block padded slightly
 
-.lead-parallax-bg-sp {}
+.lead-parallax-bg-sp {
+  overflow-x: hidden;
+}
 
 .lead-pbg-sp-parallax-ctr {
   height: 200px;
@@ -20,6 +22,7 @@
 
   @include media-breakpoint-up(sm) {
     height: calc(100% + 200px);
+    margin-right: -136px;
   }
 }
 
@@ -41,5 +44,7 @@
 }
 
 .lead-pbg-sp-cnt-bg {
-  margin-left: -1240px;
+  @include media-breakpoint-up(sm) {
+    margin-left: -136px;
+  }
 }
