@@ -1,6 +1,10 @@
 /* || Block - Lead parallax bg sp (sides padding)
    ========================================================================== */
 
+import '../../../components/animation/anim-gsap/anim-gsap.js';
+import '../../../components/miscellaneous/js-opacity-zero/js-opacity-zero.js';
+import '../../../components/animation/anim-forward-flip-in-x/anim-forward-flip-in-x.js';
+
 (function () {
   const parallaxElem = document.querySelector('.lead-pbg-sp-parallax');
   if (typeof (parallaxElem) == 'undefined' || parallaxElem == null) {

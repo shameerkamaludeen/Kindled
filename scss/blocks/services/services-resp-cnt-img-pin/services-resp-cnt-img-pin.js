@@ -1,7 +1,13 @@
 /* || Block - services-resp-cnt-img-pin (Services-responsive-content-image-pinning)
    ========================================================================== */
 
+import { breakpoints } from '../../../../scripts/variables.js';
+
 (function () {
+  if (window.innerWidth < breakpoints.lg) {
+    return;
+  }
+
   gsap.utils.toArray('.sr-cip-service-ctr').forEach((element, index, array) => {
     const contentCtrElems = element.querySelectorAll('.sr-cip-content-ctr');
     gsap.from(contentCtrElems, {
