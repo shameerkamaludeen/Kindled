@@ -12,9 +12,19 @@ import '../../../components/animation/anim-forward-flip-in-x/anim-forward-flip-i
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
+    spaceBetween: 30,
     navigation: {
       nextEl: '.tm-scr-ct-swiper-btn-next',
       prevEl: '.tm-scr-ct-swiper-btn-prev',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      },
+      1400: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      }
+    }
   });
 }());

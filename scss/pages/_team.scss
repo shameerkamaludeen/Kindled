@@ -41,3 +41,16 @@
 // || Block - Footer responsive cols lead
 // @import '../components/banner/banner-lg-text-stroke/banner-lg-text-stroke';
 // @import '../blocks/footer/footer-resp-cols-lead/footer-resp-cols-lead';
+
+// || Block - Hero trans banner anim
+.hero-tba-team {
+  @include media-breakpoint-up(xl) {
+    padding-top: 220px;
+  }
+
+  .hero-tba-content-ctr {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 80px;
+    }
+  }
+}
