@@ -1,0 +1,43 @@
+/* || Block - tm-swiper-cards-resp-ct (Testimonials swiper cards responsive controls top)
+   ========================================================================== */
+
+// 1. Features
+// Swiper cards
+// Swiper controls stays out on top on mobile and left on larger devices
+// Swiper cards are responsive (one card on small devices and two on larger 
+// devices
+
+.tm-swiper-cards-resp-ct {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.tm-scr-ct-gy-6 {
+  --bs-gutter-y: 4.5rem;
+}
+
+.tm-scr-ct-swiper {}
+
+.tm-scr-ct-swiper-btn {
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    background-color: $tertiary !important;
+  }
+}
+
+.tm-scr-ct-swiper-btn-prev {}
+
+.tm-scr-ct-swiper-btn-next {}
+
+.tm-scr-ct-card {
+  padding: 40px 30px;
+}
+
+.tm-scr-ct-profile-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: top;
+}

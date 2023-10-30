@@ -34,3 +34,5 @@ import '../scss/blocks/lead/lead-parallax-bg-sp/lead-parallax-bg-sp.js';
 import '../scss/blocks/services/services-resp-cnt-img-pin/services-resp-cnt-img-pin.js';
 
 // Our team page
+import '../scss/blocks/team/team-profiles-card-anim/team-profiles-card-anim.js';
+import '../scss/blocks/testimonial/tm-swiper-cards-resp-ct/tm-swiper-cards-resp-ct.js';
