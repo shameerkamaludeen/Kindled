@@ -36,3 +36,9 @@
 .contact-rfd-gy-6 {
   --bs-gutter-y: 4.5rem;
 }
+
+.contact-rfd-gx-xl-6 {
+  @include media-breakpoint-up(xl) {
+    --bs-gutter-x: 4.5rem;
+  }
+}
