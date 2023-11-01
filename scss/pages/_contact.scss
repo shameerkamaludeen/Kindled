@@ -19,3 +19,14 @@
 
 // || Block - footer-basic-logo-copyright (Footer basic logo copyright)
 @import '../blocks/footer/footer-basic-logo-copyright/footer-basic-logo-copyright';
+
+// || Block - contact-resp-form-dtls (Contact responsive form, details columns
+@import '../components/form/form-basic-rd-ph-labels/form-basic-rd-ph-labels';
+@import '../blocks/contact/contact-resp-form-dtls/contact-resp-form-dtls';
+
+// || Block - Hero trans banner anim
+.hero-tba-contact {
+   padding-bottom: 100px;
+}
+
+.hero-tba-contact-br {}

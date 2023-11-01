@@ -115,8 +115,7 @@
             </button>
 
             <form class="d-flex form-sa-form z-3 p-2" role="search">
-              <input
-                class="form-control position-relative rounded-end-0 z-n1 border-0 cfs-14 shadow-none form-sa-input"
+              <input class="form-control position-relative rounded-end-0 z-n1 border-0 cfs-14 shadow-none form-sa-input"
                 type="search" placeholder="Search" aria-label="Search">
               <button class="btn text-secondary bg-dark-subtle" type="submit">
                 <span class="material-icons d-block cfs-18">search</span>
@@ -140,16 +139,17 @@
         <article>
 
           <!-- || Block - Hero trans banner anim -->
-          <div class="bg-white pb-5 pb-md-4 pb-xl-0 hero-trans-banner-anim">
-            <div class="container hero-tba-content-ctr">
+          <div class="bg-white hero-trans-banner-anim hero-tba-contact">
+            <div class="container">
               <div class="row justify-content-center gy-4 gy-lg-5">
                 <div class="col-12">
                   <div class="mb-3"><span
                       class="text-uppercase ls-wide fw-light font-sora cfs-14 text-lead-list-marker">CONTACT US</span>
                   </div>
                   <h2
-                    class="display-2 col-lg-10 col-xl-8 fw-semibold lh-base animate__animated animate__delay-2s anim-gsap"
-                    data-animation="animate__fadeInUp">Let's make your brand brilliant!</h2>
+                    class="display-4 col-lg-10 col-xl-8 fw-semibold lh-base animate__animated animate__delay-2s anim-gsap"
+                    data-animation="animate__fadeInUp">Let's make <br class="hero-tba-contact-br">your brand brilliant!
+                  </h2>
                 </div>
                 <p class="col-12 col-lg-6 col-xl-5 lh-md fw-light text-secondary animate__animated animate__delay-2s anim-gsap"
                   data-animation="animate__fadeInUp">We help our clients succeed by creating brand identities, digital
@@ -157,11 +157,81 @@
                   fantastic.</p>
               </div>
             </div>
+          </div>
+
+          <!-- || Block - contact-resp-form-dtls (Contact responsive form, details columns -->
+          <section class="overflow-hidden contact-resp-form-dtls">
+            <div class="container position-relative contact-rfd-container">
+              <div class="row justify-content-between contact-rfd-gy-6">
+                <div class="col-lg-5">
+                  <div class="mb-3">
+                    <span
+                      class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal lh-md fw-medium animate__animated anim-gsap"
+                      data-animation="animate__fadeIn" data-js-opacity-zero aria-hidden="true">GET IN TOUCH</span>
+                  </div>
+
+                  <h2 class="display-4 cfs-xl-50 fw-semibold lh-normal mb-3 me-2 anim-forward-flip-in-x anim-gsap"
+                    data-animation="anim-ff-in-x-animate" data-js-opacity-zero>Let's get in
+                    touch with us.</h2>
+
+                  <p class="cfs-15 fw-light text-secondary lh-md mb-4 animate__animated anim-gsap"
+                    data-animation="animate__fadeIn" data-js-opacity-zero>If you would like to work with us or just want
+                    to get in touch, we’d love to
+                    hear from you!</p>
+
+                  <a href="tel:+1 840 841 25 69" class="d-block h2 fw-semibold cursor-hs-scale contact-rfd-mb-60">+1 840
+                    841 25
+                    69</a>
+
+                  <div class="d-flex contact-rfd-cg-normal">
+                    <a href="#" class="cfs-14 text-decoration-none text-primary cursor-hs-scale">Facebook</a>
+                    <a href="#" class="cfs-14 text-decoration-none text-primary cursor-hs-scale">Twitter</a>
+                    <a href="#" class="cfs-14 text-decoration-none text-primary cursor-hs-scale">LinkedIn</a>
+                    <a href="#" class="cfs-14 text-decoration-none text-primary cursor-hs-scale">Instagram</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <form class="row gx-4 form-brd-phl-gy-normal form-basic-rd-ph-labels">
+                    <div class="col-12 col-md-6">
+                      <input
+                        class="form-control cfs-14 shadow-none form-brd-phl-lh-3 rounded-3 border border-secondary-subtle"
+                        type="text" id="name" placeholder="Name" aria-label="name" required>
+                    </div form-basic-rd-ph-labels>
+
+                    <div class="col-12 col-md-6">
+                      <input
+                        class="form-control cfs-14 shadow-none form-brd-phl-lh-3 rounded-3 border border-secondary-subtle"
+                        type="email" id="email" placeholder="Email" aria-label="email" required>
+                    </div form-basic-rd-ph-labels>
+
+                    <div class="col-12">
+                      <input
+                        class="form-control cfs-14 shadow-none form-brd-phl-lh-3 rounded-3 border border-secondary-subtle"
+                        type="text" id="subject" placeholder="Subject" aria-label="subject">
+                    </div form-basic-rd-ph-labels>
+
+                    <div class="col-12">
+                      <textarea
+                        class="form-control cfs-14 shadow-none form-brd-phl-lh-3 rounded-3 border border-secondary-subtle"
+                        id="message" rows="4" placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit"
+                        class="btn btn-secondary cfs-14 shadow-none mb-3 bg-transparent text-primary rounded-pill py-2 lh-lg form-brd-phl-px-normal form-brd-phl-btn-hover">Let's
+                        Talk</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
         </article>
       </main>
 
       <!-- || Block - Footer responsive cols lead -->
-      <footer class="position-relative z-n1 footer-basic-logo-copyright">
+      <footer class="bg-white position-relative z-n1 footer-basic-logo-copyright">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-auto justify-content-between align-items-center gy-3">
             <div class="col">

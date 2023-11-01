@@ -1,0 +1,38 @@
+/* || Block - contact-resp-form-dtls (Contact responsive form, details columns
+   ========================================================================== */
+
+// 1. Features
+// Responsive details and form columns
+
+.contact-resp-form-dtls {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contact-rfd-container {
+  &::after {
+    content: '';
+    width: 80vw;
+    height: 80vw;
+    border: 200px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: -15vw;
+    right: -30vw;
+    opacity: .01;
+    pointer-events: none;
+  }
+}
+
+.contact-rfd-mb-60 {
+  margin-bottom: 60px !important;
+}
+
+// column gap
+.contact-rfd-cg-normal {
+  column-gap: 2rem !important;
+}
+
+.contact-rfd-gy-6 {
+  --bs-gutter-y: 4.5rem;
+}
