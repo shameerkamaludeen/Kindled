@@ -1,0 +1,47 @@
+/* || Component - form-basic-rd-ph-labels (Form basic rounded placeholder labels)
+  =========================================================================== */
+
+// 1. Features
+// Labels are placeholder only
+// Responsive inputs
+
+.form-basic-rd-ph-labels {
+  input {
+    transition: border-color .3s;
+
+    &:focus {
+      border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
+    }
+  }
+
+  textarea {
+    transition: border-color .3s;
+
+    &:focus {
+      border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
+    }
+  }
+}
+
+.form-brd-phl-lh-3 {
+  line-height: 3 !important;
+}
+
+.form-brd-phl-gy-normal {
+  --bs-gutter-y: 2rem;
+}
+
+.form-brd-phl-px-normal {
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+}
+
+.form-brd-phl-btn-hover {
+
+  &:hover,
+  &:focus {
+    background-color: $primary !important;
+    color: white !important;
+    border: 1px solid $primary;
+  }
+}

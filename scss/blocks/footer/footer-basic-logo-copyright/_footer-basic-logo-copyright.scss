@@ -1,0 +1,18 @@
+/* || Block - footer-basic-logo-copyright (Footer basic logo copyright)
+   ========================================================================== */
+
+// 1. Features
+// Basic responsive logo and footnote or copyright
+
+.footer-basic-logo-copyright {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-blc-logo-link {
+  max-width: 120px;
+
+  @include media-breakpoint-up(xl) {
+    max-width: 130px;
+  }
+}
