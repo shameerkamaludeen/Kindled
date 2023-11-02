@@ -11,3 +11,23 @@
 // removing any block or component it is ease to know and uncomment to the 
 // dependencies
 
+// || Block - Hero trans banner anim
+// @import '../components/text/text-lead-list-marker/text-lead-list-marker';
+// @import '../components/animation/anim-gsap/anim-gsap';
+// @import '../components/animation/anim-slide-in-up/anim-slide-in-up';
+// @import '../blocks/hero/hero-trans-banner-anim/hero-trans-banner-anim';
+
+// Block - portfolio-metro-anim-filter (Portfolio metro animation and filter)
+// @import '../components/animation/anim-gsap/anim-gsap';
+// @import '../components/animation/anim-swipe-in-lr-zb/anim-swipe-in-lr-zb';
+@import '../blocks/portfolio/portfolio-metro-anim-filter/portfolio-metro-anim-filter';
+
+// || Block - Footer responsive cols lead
+// @import '../blocks/footer/footer-resp-cols-lead/footer-resp-cols-lead';
+
+// || Block - Hero trans banner anim
+
+.hero-tba-portfolio {
+   padding-top: 200px;
+   padding-bottom: 50px;
+}

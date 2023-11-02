@@ -36,3 +36,6 @@ import '../scss/blocks/services/services-resp-cnt-img-pin/services-resp-cnt-img-
 // Our team page
 import '../scss/blocks/team/team-profiles-card-anim/team-profiles-card-anim.js';
 import '../scss/blocks/testimonial/tm-swiper-cards-resp-ct/tm-swiper-cards-resp-ct.js';
+
+// Portfolio page
+import '../scss/blocks/portfolio/portfolio-metro-anim-filter/portfolio-metro-anim-filter.js';

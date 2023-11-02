@@ -1,0 +1,66 @@
+/* Block - pf-metro-anim-filter (pf metro animation and filter)
+   ========================================================================== */
+
+// 1. Features
+// Metro style design
+// Animation trigger on scrolling 
+
+.portfolio-metro-anim-filter {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.pf-maf-filter-row {
+  margin-bottom: 80px;
+}
+
+.pf-maf-filter-tittle-col {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.pf-maf-radio {
+  &:checked+.pf-maf-label {
+    transition: color .3s, opacity .3s;
+    color: $primary;
+    opacity: 1 !important;
+  }
+}
+
+.pf-maf-portfolio-wr-sm {
+  height: 250px;
+}
+
+.pf-maf-portfolio-wr-lg {
+  height: 524px;
+}
+
+.pf-maf-cnt-wr {
+  transition: background-color .5s;
+  background-color: transparent;
+
+  &:hover {
+    background-color: hsl(136deg 0% 0% / 70%);
+
+    .pf-maf-cnt-tittle {
+      transition: transform .6s;
+      transform: none;
+    }
+
+    .pf-maf-cnt-link-text {
+      transition: transform .6s .2s;
+      transform: none;
+    }
+  }
+}
+
+.pf-maf-cnt-tittle {
+  transition: transform .3s;
+  transform: translateY(80px);
+}
+
+.pf-maf-cnt-link-text {
+  transition: transform .3s;
+  transform: translateY(80px);
+}
