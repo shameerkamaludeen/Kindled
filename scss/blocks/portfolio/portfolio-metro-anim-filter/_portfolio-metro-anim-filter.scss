@@ -12,6 +12,10 @@
 
 .pf-maf-filter-row {
   margin-bottom: 80px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 90px;
+  }
 }
 
 .pf-maf-filter-tittle-col {

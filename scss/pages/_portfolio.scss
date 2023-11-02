@@ -28,6 +28,23 @@
 // || Block - Hero trans banner anim
 
 .hero-tba-portfolio {
-   padding-top: 200px;
-   padding-bottom: 50px;
+   padding-bottom: 40px;
+
+   @include media-breakpoint-up(sm) {
+      padding-bottom: 0;
+   }
+
+   @include media-breakpoint-up(lg) {
+      padding-top: 275px;
+   }
+}
+
+.hero-tba-pf-tittle {
+   @include media-breakpoint-up(lg) {
+      font-size: 90px;
+   }
+
+   @include media-breakpoint-up(xl) {
+      font-size: 120px;
+   }
 }
