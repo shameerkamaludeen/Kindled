@@ -2,7 +2,10 @@
    ========================================================================== */
 
 (function () {
-  const footerElems = document.querySelectorAll('.footer-resp-cols-lead');
+  const footerElems = document.querySelectorAll('.footer-rcl-anim');
+  if (!footerElems.length) {
+    return;
+  }
   gsap.set(footerElems[0], { yPercent: -50 })
   gsap.to(footerElems, {
     scrollTrigger: {
