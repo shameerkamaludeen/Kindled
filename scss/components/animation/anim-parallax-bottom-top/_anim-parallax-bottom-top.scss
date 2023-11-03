@@ -1,0 +1,21 @@
+/* || Component - anim-parallax-bottom-top (Animation parallax bottom top)
+   ========================================================================== */
+
+// 1. Features
+// Parallax display content bottom to top on scroll 
+
+.anim-parallax-bottom-top {
+  height: 40vh;
+
+  @include media-breakpoint-up(md) {
+    height: 75vh;
+  }
+}
+
+.anim-pbt-content {
+  height: 170%;
+
+  @include media-breakpoint-up(md) {
+    height: 160%;
+  }
+}
