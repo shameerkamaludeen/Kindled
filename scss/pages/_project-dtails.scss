@@ -18,6 +18,9 @@
 // @import '../blocks/hero/hero-trans-banner-anim/hero-trans-banner-anim';
 
 // || Block - project-details-img-parallax (Project details with images and pararllax animation)
+// @import '../components/miscellaneous/js-opacity-zero/js-opacity-zero';
+// @import '../components/animation/anim-gsap/anim-gsap';
+// @import '../components/animation/anim-forward-flip-in-x/anim-forward-flip-in-x';
 @import '../components/animation/anim-parallax-bottom-top/anim-parallax-bottom-top';
 @import '../blocks/project/project-details-img-parallax/project-details-img-parallax';
 
@@ -33,9 +36,23 @@
 
 .hero-tba-project-dtls {
    padding-top: 120px;
-   padding-bottom: 120px;
+   padding-bottom: 100px;
+
+   @include media-breakpoint-up(lg) {
+      padding-top: 200px;
+   }
 }
 
 .hero-tba-pd-display-ctr {
    height: 70vh;
+
+   img {
+      object-position: top;
+   }
+}
+
+.hero-tba-pd-tittle {
+   @include media-breakpoint-up(lg) {
+      font-size: 70px;
+   }
 }
