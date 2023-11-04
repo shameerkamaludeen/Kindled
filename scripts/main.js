@@ -39,3 +39,6 @@ import '../scss/blocks/testimonial/tm-swiper-cards-resp-ct/tm-swiper-cards-resp-
 
 // Portfolio page
 import '../scss/blocks/portfolio/portfolio-metro-anim-filter/portfolio-metro-anim-filter.js';
+
+// Project details page
+import '../scss/blocks/project/project-details-img-parallax/project-details-img-parallax.js';
