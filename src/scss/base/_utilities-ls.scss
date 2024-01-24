@@ -1,0 +1,56 @@
+/* || Abstract - Utilities
+   ========================================================================== */
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/utilities";
+
+// || Bootstrap map customization
+$utilities: map-merge(
+  $utilities, (
+    "line-height": map-merge(
+      map-get($utilities, "line-height"), 
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "line-height"), "values"), (
+            md: $line-height-medium
+          ),
+        ),
+      ),
+    ),
+    "letter-spacing": (
+      property: letter-spacing,
+      class: ls,
+      values: (base: 0.5px,
+        normal: 1px,
+        wide: 2px,
+      ),
+    ),
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"), 
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "font-weight"), "values"), (
+            800: 800
+          ),
+        ),
+      ),
+    ),
+    "custom-font-size": (
+      property: font-size,
+      responsive: true,
+      class: cfs,
+      values: $custom-font-sizes
+    ),
+    "font-family": map-merge(
+      map-get($utilities, "font-family"), 
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "font-family"), "values"), (
+            sora: var(--font-sora),
+            playfair-display: var(--font-playfair-display)
+          ),
+        ),
+      ),
+    ),
+  ),
+);

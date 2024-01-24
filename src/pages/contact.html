@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Kindled</title>
+  <meta name="description"
+    content="This is a website developed with the help of a design inspired by one of the Geekfolio's Creative Agency & Portfolio theme template.">
+  <link rel="icon" type="image/png" sizes="128x128" href="../images/favicon-128x128.png">
+
+  <!-- Google fonts starts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google fonts ends -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body class="font-sora">
+  <!-- || Component - Cursor hover scale -->
+  <aside>
+    <div class="cursor-hover-scale rounded-circle d-none d-lg-block"></div>
+  </aside>
+
+  <!-- || Component - Scroll to top btn anim -->
+  <aside class="position-fixed z-3 scroll-to-top-btn-anim cursor-hs-scale">
+    <button type="button"
+      class="w-100 h-100 d-flex justify-content-center align-items-center border border-2 border-secondary rounded-circle">
+      <span class="material-icons fw-semibold">
+        expand_less
+      </span>
+    </button>
+  </aside>
+
+  <!-- || Component - loader full wh anim -->
+  <aside
+    class="position-fixed vw-100 vh-100 d-flex justify-content-center align-items-center bg-white d-none loader-full-wh-anim">
+    <div class="cfs-15 cfs-md-20 fw-light text-uppercase opacity-0 loader-fw-ha-st">Loading</div>
+  </aside>
+
+  <!-- || Header -->
+  <header class="sticky-header-top-anim">
+    <!-- || Component - Navbar responsive manu center -->
+    <nav class="navbar navbar-expand-lg bg-body navbar-responsive-menu-center">
+      <div class="container-lg navbar-rmc-container">
+        <a href="../" class="navbar-brand cursor-hs-scale navbar-rmc-brand cursor-hs-scale">
+          <h1 class="visually-hidden">Kindled</h1>
+          <img src="../images/logo-dark.png" alt="Kindled" class="navbar-rmc-brand-img">
+        </a>
+
+        <button class="navbar-toggler border-0 navbar-rmc-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-rmc-collapse" id="navbarSupportedContent">
+          <!-- || Nav -->
+          <ul class="navbar-nav me-auto mx-xxl-auto navbar-rmc-navbar">
+            <li class="nav-item navbar-rmc-nav-item">
+              <a class="nav-link text-uppercase fw-semibold cfs-13 cursor-hs-scale ls-normal navbar-rmc-nav-link"
+                aria-current="page" href="../">
+                <div class="rolling-text">Home</div>
+              </a>
+            </li>
+            <li class="nav-item navbar-rmc-nav-item">
+              <a class="nav-link text-uppercase fw-semibold cfs-13 cursor-hs-scale ls-normal navbar-rmc-nav-link"
+                href="./about.html">
+                <div class="rolling-text">About</div>
+              </a>
+            </li>
+            <li class="nav-item navbar-rmc-nav-item">
+              <a class="nav-link text-uppercase fw-semibold cfs-13 cursor-hs-scale ls-normal navbar-rmc-nav-link"
+                href="./services.html">
+                <div class="rolling-text">Services</div>
+              </a>
+            </li>
+            <li class="nav-item navbar-rmc-nav-item">
+              <a class="nav-link text-uppercase fw-semibold cfs-13 cursor-hs-scale ls-normal navbar-rmc-nav-link"
+                href="./team.html">
+                <div class="rolling-text">Team</div>
+              </a>
+            </li>
+            <li class="nav-item navbar-rmc-nav-item">
+              <a class="nav-link text-uppercase fw-semibold cfs-13 cursor-hs-scale ls-normal navbar-rmc-nav-link"
+                href="./portfolio.html">
+                <div class="rolling-text">Portfolio</div>
+              </a>
+            </li>
+            <li class="nav-item navbar-rmc-nav-item">
+              <a class="nav-link active text-uppercase fw-semibold cfs-13 cursor-hs-scale ls-normal navbar-rmc-nav-link"
+                href="./contact.html">
+                <div class="rolling-text">Contact</div>
+              </a>
+            </li>
+          </ul>
+          <!-- || Component - Form search anim -->
+          <div class="form-search-anim" role="search">
+            <button class="d-block h-100 bg-body p-0 cursor-hs-scale form-sa-control overflow-hidden" type="button">
+              <span class="d-flex align-items-center justify-content-center w-100 h-100 form-sa-control-icon-wr-search">
+                <span class="material-icons d-block cfs-18 text-secondary active">search</span>
+              </span>
+              <span
+                class="bg-secondary-subtle d-flex align-items-center justify-content-center w-100 h-100 form-sa-control-icon-wr-close">
+                <span class="material-icons d-block cfs-18 text-secondary">close</span>
+              </span>
+            </button>
+
+            <form class="d-flex form-sa-form z-3 p-2" role="search">
+              <input class="form-control position-relative rounded-end-0 z-n1 border-0 cfs-14 shadow-none form-sa-input"
+                type="search" placeholder="Search" aria-label="Search">
+              <button class="btn text-secondary bg-dark-subtle" type="submit">
+                <span class="material-icons d-block cfs-18">search</span>
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- || Component - Scroll smoother -->
+  <div class="scroll-smoother-gsap">
+    <div class="ss-gsap-content">
+
+      <!-- || Main -->
+      <main>
+
+        <!-- || Article -->
+        <article>
+
+          <!-- || Block - Hero trans banner anim -->
+          <div class="bg-white hero-trans-banner-anim hero-tba-contact">
+            <div class="container">
+              <div class="row justify-content-center gy-4 gy-lg-5">
+                <div class="col-12">
+                  <div class="mb-3"><span
+                      class="text-uppercase ls-wide fw-light font-sora cfs-14 text-lead-list-marker">CONTACT US</span>
+                  </div>
+                  <h2
+                    class="display-4 col-lg-10 col-xl-8 fw-semibold lh-base animate__animated animate__delay-2s anim-gsap"
+                    data-animation="animate__fadeInUp">Let's make <br>your brand brilliant!
+                  </h2>
+                </div>
+                <p class="col-12 col-lg-6 col-xl-5 lh-md fw-light text-secondary animate__animated animate__delay-2s anim-gsap"
+                  data-animation="animate__fadeInUp">We help our clients succeed by creating brand identities, digital
+                  experiences, and print materials that communicate clearly, achieve marketing goals, and look
+                  fantastic.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- || Block - contact-resp-form-dtls (Contact responsive form, details columns -->
+          <section class="overflow-hidden contact-resp-form-dtls">
+            <div class="container position-relative contact-rfd-container">
+              <div class="row justify-content-between gx-5 gx-xxl-0 contact-rfd-gy-6">
+                <div class="col-lg-6 col-xl-5">
+                  <div class="mb-3">
+                    <span
+                      class="cfs-12 text-uppercase d-inline-block border border-secondary px-4 py-2 rounded-pill ls-normal lh-md fw-medium animate__animated anim-gsap"
+                      data-animation="animate__fadeIn" data-js-opacity-zero aria-hidden="true">GET IN TOUCH</span>
+                  </div>
+
+                  <h2 class="display-4 cfs-xl-50 fw-semibold lh-normal mb-3 me-2 anim-forward-flip-in-x anim-gsap"
+                    data-animation="anim-ff-in-x-animate" data-js-opacity-zero>Let's get in
+                    touch with us.</h2>
+
+                  <p class="cfs-15 fw-light text-secondary lh-md mb-4 animate__animated anim-gsap"
+                    data-animation="animate__fadeIn" data-js-opacity-zero>If you would like to work with us or just want
+                    to get in touch, we’d love to
+                    hear from you!</p>
+
+                  <a href="tel:+18408412569"
+                    class="d-inline-block h2 fw-semibold cursor-hs-scale contact-rfd-mb-60">+1 840
+                    841 25
+                    69</a>
+
+                  <div class="d-flex flex-wrap row-gap-3 contact-rfd-cg-normal">
+                    <a href="#" class="cfs-14 text-decoration-none text-primary cursor-hs-scale">Facebook</a>
+                    <a href="#" class="cfs-14 text-decoration-none text-primary cursor-hs-scale">Twitter</a>
+                    <a href="#" class="cfs-14 text-decoration-none text-primary cursor-hs-scale">LinkedIn</a>
+                    <a href="#" class="cfs-14 text-decoration-none text-primary cursor-hs-scale">Instagram</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <form class="row gx-4 form-brd-phl-gy-normal form-basic-rd-ph-labels">
+                    <div class="col-12 col-md-6">
+                      <input
+                        class="form-control cfs-14 shadow-none form-brd-phl-lh-3 rounded-3 border border-secondary-subtle"
+                        type="text" id="name" placeholder="Name" aria-label="name" required>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <input
+                        class="form-control cfs-14 shadow-none form-brd-phl-lh-3 rounded-3 border border-secondary-subtle"
+                        type="email" id="email" placeholder="Email" aria-label="email" required>
+                    </div>
+
+                    <div class="col-12">
+                      <input
+                        class="form-control cfs-14 shadow-none form-brd-phl-lh-3 rounded-3 border border-secondary-subtle"
+                        type="text" id="subject" placeholder="Subject" aria-label="subject">
+                    </div>
+
+                    <div class="col-12">
+                      <textarea
+                        class="form-control cfs-14 shadow-none form-brd-phl-lh-3 rounded-3 border border-secondary-subtle"
+                        id="message" rows="4" placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit"
+                        class="btn btn-secondary cfs-14 shadow-none mb-3 bg-transparent text-primary rounded-pill py-2 lh-lg form-brd-phl-px-normal form-brd-phl-btn-hover cursor-hs-scale">Let's
+                        Talk</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+
+      <!-- || Block - Footer responsive cols lead -->
+      <footer class="bg-white position-relative z-n1 footer-basic-logo-copyright">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-auto justify-content-between align-items-center gy-3">
+            <div class="col">
+              <a class="d-inline-block cursor-hs-scale footer-blc-logo-link" href="../">
+                <img class="w-100" src="../images/logo-dark.png" alt="Kindled Logo">
+              </a>
+            </div>
+
+            <div class="col">
+              <p class="text-secondary cfs-13 m-0 fw-light">© 2023 Kindled is Proudly Powered by <a
+                  href="https://github.com/shameerkamaludeen" target="_blank"
+                  class="text-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover cursor-hs-scale">Shameer
+                  Kamaludeen</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- gsap scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Font awesome kit -->
+  <script src="https://kit.fontawesome.com/efb6dbae73.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
