@@ -11,18 +11,21 @@
 // removing any block or component it is ease to know and uncomment to the 
 // dependencies
 
-// || Block - Hero trans banner anim
-// @import '../components/text/text-lead-list-marker/text-lead-list-marker';
-// @import '../components/animation/anim-gsap/anim-gsap';
-// @import '../components/animation/anim-slide-in-up/anim-slide-in-up';
-// @import '../blocks/hero/hero-trans-banner-anim/hero-trans-banner-anim';
+// || Main
+@import '../main';
 
-// || Block - footer-basic-logo-copyright (Footer basic logo copyright)
-@import '../blocks/footer/footer-basic-logo-copyright/footer-basic-logo-copyright';
+// || Block - Hero trans banner anim
+@import '../components/text/text-lead-list-marker/text-lead-list-marker';
+@import '../components/animation/anim-gsap/anim-gsap';
+@import '../components/animation/anim-slide-in-up/anim-slide-in-up';
+@import '../blocks/hero/hero-trans-banner-anim/hero-trans-banner-anim';
 
 // || Block - contact-resp-form-dtls (Contact responsive form, details columns
 @import '../components/form/form-basic-rd-ph-labels/form-basic-rd-ph-labels';
 @import '../blocks/contact/contact-resp-form-dtls/contact-resp-form-dtls';
+
+// || Block - footer-basic-logo-copyright (Footer basic logo copyright)
+@import '../blocks/footer/footer-basic-logo-copyright/footer-basic-logo-copyright';
 
 // || Block - Hero trans banner anim
 .hero-tba-contact {
@@ -32,3 +35,6 @@
       padding-top: 220px;
    }
 }
+
+// || Themes
+@import '../themes/default-theme';

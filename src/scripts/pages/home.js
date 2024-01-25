@@ -1,7 +1,7 @@
-// Import components styles
+// Import styles
 import '../../scss/pages/home.scss'
 
-// Import components scripts
+// Import scripts
 import '../../scss/blocks/hero/hero-lead-img-anim/hero-lead-img-anim.js';
 import '../../scss/blocks/company/company-tag-img-lead/company-tag-img-lead.js';
 import '../../scss/components/banner/banner-infinite-roll/banner-infinite-roll.js';
@@ -12,3 +12,4 @@ import '../../scss/blocks/services/services-text-img-cols/services-text-img-cols
 import '../../scss/blocks/testimonial/tm-slider-stat/tm-slider-stat.js';
 import '../../scss/blocks/stats/stats-stroke-anim/stats-stroke-anim.js';
 import '../../scss/blocks/blog/blog-link-card-list/blog-link-card-list.js';
+import '../../scss/blocks/footer/footer-resp-cols-lead/_footer-resp-cols-lead.js';

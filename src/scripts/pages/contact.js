@@ -1,5 +1,5 @@
-// Import components styles
+// Import styles
 import '../../scss/pages/contact.scss'
 
-// Import components scripts
-import '../../scss/blocks/project/project-details-img-parallax/project-details-img-parallax.js';
+// Import scripts
+import '../../scss/blocks/hero/hero-trans-banner-anim/hero-trans-banner-anim.js';

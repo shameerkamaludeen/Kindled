@@ -1,6 +1,3 @@
-// Import main styles
-import '../scss/style.scss'
-
 // Register ScrollTrigger plugin to use
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,4 +7,3 @@ import '../scss/components/cursor/cursor-hover-scale/cursor-hover-scale.js';
 import '../scss/components/sticky/sticky-header-top-anim/sticky-header-top-anim.js';
 import '../scss/components/navigation/navbar-responsive-menu-center/navbar-responsive-menu-center.js';
 import '../scss/components/scroll/scroll-smoother-gsap/scroll-smoother-gsap.js';
-import '../scss/blocks/footer/footer-resp-cols-lead/_footer-resp-cols-lead.js';

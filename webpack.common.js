@@ -40,44 +40,37 @@ function getHtmlTemplateObjArray() {
   return [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'home', 'default-theme'],
-      chunksSortMode: 'manual'
+      chunks: ['bootstrap-plugins', 'plugins', 'main', 'home'],
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/about.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'about', 'default-theme'],
+      chunks: ['bootstrap-plugins', 'plugins', 'main', 'about'],
       filename: 'pages/about.html',
-      chunksSortMode: 'manual'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/services.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'services', 'default-theme'],
+      chunks: ['bootstrap-plugins', 'plugins', 'main', 'services'],
       filename: 'pages/services.html',
-      chunksSortMode: 'manual'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/team.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'team', 'default-theme'],
+      chunks: ['bootstrap-plugins', 'plugins', 'main', 'team'],
       filename: 'pages/team.html',
-      chunksSortMode: 'manual'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/portfolio.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'portfolio', 'default-theme'],
+      chunks: ['bootstrap-plugins', 'plugins', 'main', 'portfolio'],
       filename: 'pages/portfolio.html',
-      chunksSortMode: 'manual'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/contact.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'contact', 'default-theme'],
+      chunks: ['bootstrap-plugins', 'plugins', 'main', 'contact'],
       filename: 'pages/contact.html',
-      chunksSortMode: 'manual'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/project-details.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'project-details', 'default-theme'],
+      chunks: ['bootstrap-plugins', 'plugins', 'main', 'project-details'],
       filename: 'pages/project-details.html',
-      chunksSortMode: 'manual'
     })
   ];
 }
@@ -94,10 +87,6 @@ function getEntryObj() {
     },
     main: {
       import: './src/scripts/main.js',
-      filename: './scripts/[name].js'
-    },
-    'default-theme': {
-      import: './src/scripts/default-theme.js',
       filename: './scripts/[name].js'
     },
     home: {
@@ -124,7 +113,7 @@ function getEntryObj() {
       import: './src/scripts/pages/contact.js',
       filename: './scripts/pages/[name].js'
     },
-    contact: {
+    'project-details': {
       import: './src/scripts/pages/project-details.js',
       filename: './scripts/pages/[name].js'
     }

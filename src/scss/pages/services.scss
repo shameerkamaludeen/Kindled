@@ -11,41 +11,44 @@
 // removing any block or component it is ease to know and uncomment to the 
 // dependencies
 
+// || Main
+@import '../main';
+
 // || Block - Hero trans banner anim
-// @import '../components/text/text-lead-list-marker/text-lead-list-marker';
-// @import '../components/animation/anim-gsap/anim-gsap';
-// @import '../components/animation/anim-slide-in-up/anim-slide-in-up';
-// @import '../components/banner/banner-infinite-roll/banner-infinite-roll';
-// @import '../blocks/hero/hero-trans-banner-anim/hero-trans-banner-anim';
+@import '../components/text/text-lead-list-marker/text-lead-list-marker';
+@import '../components/animation/anim-gsap/anim-gsap';
+@import '../components/animation/anim-slide-in-up/anim-slide-in-up';
+@import '../components/banner/banner-infinite-roll/banner-infinite-roll';
+@import '../blocks/hero/hero-trans-banner-anim/hero-trans-banner-anim';
 
 // || Block - Services cards lead icon
-// @import '../components/card/card-lead-icon/card-lead-icon';
-// @import '../blocks/services/services-cards-lead-icon/services-cards-lead-icon';
+@import '../components/miscellaneous/js-opacity-zero/js-opacity-zero';
+@import '../components/card/card-lead-icon/card-lead-icon';
+@import '../blocks/services/services-cards-lead-icon/services-cards-lead-icon';
 
 // || Block - services-resp-cnt-img-pin (Services-responsive-content-image-pinning)
-// @import '../components/link/link-hover-bg-border-trans/link-hover-bg-border-trans';
+@import '../components/link/link-hover-bg-border-trans/link-hover-bg-border-trans';
 @import '../blocks/services/services-resp-cnt-img-pin/services-resp-cnt-img-pin';
 
 // || Block - Services text img cols
-// @import '../components/card/card-lead-icon-bg/card-lead-icon-bg';
-// @import '../blocks/services/services-text-img-cols/services-text-img-cols';
+@import '../components/card/card-lead-icon-bg/card-lead-icon-bg';
+@import '../blocks/services/services-text-img-cols/services-text-img-cols';
 
 // || Block - Service features aic ( accordian image component)
 // @import '../components/miscellaneous/js-opacity-zero/js-opacity-zero';
 // @import '../components/animation/anim-gsap/anim-gsap';
-// @import '../components/accordion/accordion-anim-fade-in-up/accordion-anim-fade-in-up';
-// @import '../blocks/services/service-features-aic/service-features-aic';
+@import '../components/accordion/accordion-anim-fade-in-up/accordion-anim-fade-in-up';
+@import '../blocks/services/service-features-aic/service-features-aic';
 
 // || Block - Lead parallax bg sp (sides padding)
 // @import '../components/miscellaneous/js-opacity-zero/js-opacity-zero';
 // @import '../components/animation/anim-gsap/anim-gsap';
-// @import '../components/animation/anim-forward-flip-in-x/anim-forward-flip-in-x';
+@import '../components/animation/anim-forward-flip-in-x/anim-forward-flip-in-x';
 // @import '../components/link/link-hover-bg-border-trans/link-hover-bg-border-trans';
-// @import '../blocks/lead/lead-parallax-bg-sp/lead-parallax-bg-sp';
+@import '../blocks/lead/lead-parallax-bg-sp/lead-parallax-bg-sp';
 
 // || Block - Footer responsive cols lead
-// @import '../components/banner/banner-lg-text-stroke/banner-lg-text-stroke';
-// @import '../blocks/footer/footer-resp-cols-lead/footer-resp-cols-lead';
+@import '../blocks/footer/footer-resp-cols-lead/footer-resp-cols-lead';
 
 // || Block - Services text img cols
 .services-tic-services {
@@ -63,3 +66,6 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+// || Themes
+@import '../themes/default-theme';
