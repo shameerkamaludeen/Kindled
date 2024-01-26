@@ -6,10 +6,10 @@ module.exports = {
   // Use "getHtmlTemplateObjArray().concat([])" statement to add more plugins
   plugins: getHtmlTemplateObjArray(),
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    chunkFilename: 'scripts/[name].chunk.bundle.js',
+    chunkFilename: 'scripts/[name].[contenthash].js',
   },
   module: {
     rules: [
@@ -17,7 +17,7 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name]-[hash][ext][query]'
+          filename: 'images/[name].[contenthash][ext][query]'
         },
       },
       {
@@ -79,43 +79,43 @@ function getEntryObj() {
   return {
     'bootstrap-plugins': {
       import: './src/scripts/bootstrap-plugins.js',
-      filename: './scripts/[name].js'
+      filename: './scripts/[name].[contenthash].js'
     },
     plugins: {
       import: ['./src/scripts/scroll-smoother.min.js'],
-      filename: './scripts/[name].js'
+      filename: './scripts/[name].[contenthash].js'
     },
     main: {
       import: './src/scripts/main.js',
-      filename: './scripts/[name].js'
+      filename: './scripts/[name].[contenthash].js'
     },
     home: {
       import: './src/scripts/pages/home.js',
-      filename: './scripts/pages/[name].js'
+      filename: './scripts/pages/[name].[contenthash].js'
     },
     about: {
       import: './src/scripts/pages/about.js',
-      filename: './scripts/pages/[name].js'
+      filename: './scripts/pages/[name].[contenthash].js'
     },
     services: {
       import: './src/scripts/pages/services.js',
-      filename: './scripts/pages/[name].js'
+      filename: './scripts/pages/[name].[contenthash].js'
     },
     team: {
       import: './src/scripts/pages/team.js',
-      filename: './scripts/pages/[name].js'
+      filename: './scripts/pages/[name].[contenthash].js'
     },
     portfolio: {
       import: './src/scripts/pages/portfolio.js',
-      filename: './scripts/pages/[name].js'
+      filename: './scripts/pages/[name].[contenthash].js'
     },
     contact: {
       import: './src/scripts/pages/contact.js',
-      filename: './scripts/pages/[name].js'
+      filename: './scripts/pages/[name].[contenthash].js'
     },
     'project-details': {
       import: './src/scripts/pages/project-details.js',
-      filename: './scripts/pages/[name].js'
+      filename: './scripts/pages/[name].[contenthash].js'
     }
   };
 }

@@ -16,7 +16,7 @@ const optimization = merge(common.optimization, {
 common.plugins.push(
   new MiniCssExtractPlugin({
     filename: "styles/[name].[contenthash].css",
-    chunkFilename: "[id].[contenthash].css",
+    chunkFilename: "styles/[id].[contenthash].css",
   })
 );
 
