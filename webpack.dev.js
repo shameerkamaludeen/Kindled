@@ -47,4 +47,5 @@ module.exports = merge(common, {
       },
     },
   },
+  ignoreWarnings: [(warning) => true],
 });
