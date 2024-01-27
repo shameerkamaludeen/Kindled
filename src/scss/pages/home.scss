@@ -6,9 +6,23 @@
 // Make sure no repeated @import as it duplicate itself due to the use of @import 
 // instead of @use, we will replace this aproach once start migrate to @use 
 // implemented bootstrap.
+// The order of importing the following parts are mandatory
 
-// || Main
+// || Optimized bootstrap imports
+@import '../default';
+
+// || Vendors (jQuery | Bootstrap | etc)
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+
+// || Custom code
+@import '../custom';
+
+// || Common Blocks and Components 
 @import '../main';
+
+/* || Page specific Blocks and Components
+   --------------------------------------------------------------------------- */
 
 // || Block - Hero lead image animation
 // @import '../components/cursor/cursor-hover-scale/cursor-hover-scale';

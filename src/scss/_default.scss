@@ -1,3 +1,6 @@
+/* || Customized Bootstrap imports
+   =========================================================================== */
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "bootstrap/scss/functions";
 @import 'abstracts/functions-ls';
@@ -56,23 +59,3 @@
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/scss/utilities/api";
-
-// 8. Add additional custom code here
-// Vendors (jQuery | Bootstrap | etc)
-@import 'swiper/scss';
-@import 'swiper/scss/navigation';
-
-// Abstracts
-@import 'abstracts/mixins-ls';
-
-// Base
-@import 'base/base';
-@import 'base/sitewide';
-
-// Layout
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/main';
-@import 'layout/article';
-@import 'layout/footer';
-@import 'layout/aside';

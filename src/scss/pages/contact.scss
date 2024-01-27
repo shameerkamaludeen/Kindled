@@ -10,9 +10,19 @@
 // still placed as it is to show any component or blocks dependencies and once 
 // removing any block or component it is ease to know and uncomment to the 
 // dependencies
+// The order of importing the following parts are mandatory
 
-// || Main
+// || Optimized bootstrap imports
+@import '../default';
+
+// || Custom code
+@import '../custom';
+
+// || Common Blocks and Components 
 @import '../main';
+
+/* || Page specific Blocks and Components
+   --------------------------------------------------------------------------- */
 
 // || Block - Hero trans banner anim
 @import '../components/text/text-lead-list-marker/text-lead-list-marker';

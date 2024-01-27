@@ -2,15 +2,7 @@
    ========================================================================== */
 
 // 1. Notes
-// Each block/component with comment listed its dependencies 
-// Make sure no repeated @import as it duplicate itself due to the use of @import 
-// instead of @use, we will replace this aproach once start migrate to @use 
-// implemented bootstrap.
-
-// || Optimized frameworks, libraries or plugins imports
-@import './default';
-
-// || Blocks or Components used in all pages
+// Common Blocks and Components
 
 // || Component - Sticky header top anim
 @import './components/sticky/sticky-header-top-anim/sticky-header-top-anim';
