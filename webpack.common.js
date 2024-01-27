@@ -40,11 +40,11 @@ function getHtmlTemplateObjArray() {
   return [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'home'],
+      chunks: ['bootstrap-plugins', 'plugins', 'swiper', 'main', 'home'],
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/about.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'about'],
+      chunks: ['bootstrap-plugins', 'plugins', 'swiper', 'main', 'about'],
       filename: 'pages/about.html',
     }),
     new HtmlWebpackPlugin({
@@ -54,7 +54,7 @@ function getHtmlTemplateObjArray() {
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/team.html',
-      chunks: ['bootstrap-plugins', 'plugins', 'main', 'team'],
+      chunks: ['bootstrap-plugins', 'plugins', 'swiper', 'main', 'team'],
       filename: 'pages/team.html',
     }),
     new HtmlWebpackPlugin({
@@ -85,17 +85,23 @@ function getEntryObj() {
       import: ['./src/scripts/scroll-smoother.min.js'],
       filename: './scripts/[name].[contenthash].js'
     },
+    swiper: {
+      import: 'swiper',
+      filename: './scripts/[name].[contenthash].js'
+    },
     main: {
       import: './src/scripts/main.js',
       filename: './scripts/[name].[contenthash].js'
     },
     home: {
       import: './src/scripts/pages/home.js',
-      filename: './scripts/pages/[name].[contenthash].js'
+      filename: './scripts/pages/[name].[contenthash].js',
+      dependOn: 'swiper',
     },
     about: {
       import: './src/scripts/pages/about.js',
-      filename: './scripts/pages/[name].[contenthash].js'
+      filename: './scripts/pages/[name].[contenthash].js',
+      dependOn: 'swiper',
     },
     services: {
       import: './src/scripts/pages/services.js',
@@ -103,7 +109,8 @@ function getEntryObj() {
     },
     team: {
       import: './src/scripts/pages/team.js',
-      filename: './scripts/pages/[name].[contenthash].js'
+      filename: './scripts/pages/[name].[contenthash].js',
+      dependOn: 'swiper',
     },
     portfolio: {
       import: './src/scripts/pages/portfolio.js',
