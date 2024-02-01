@@ -9,7 +9,7 @@ This is a website design made with the help of a design inspired by one of the [
 ### Links
 
 - Solution URL: [Click here](https://github.com/shameerkamaludeen/kindled)
-- Live Site URL: [Click here](https://shameerkamaludeen.github.io/kindled/)
+- Live Site URL: [Click here](https://gleeful-cocada-a9b9bc.netlify.app/)
 
 ### Built with
 
