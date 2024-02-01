@@ -30,6 +30,7 @@ module.exports = {
     ],
   },
   optimization: {
+    moduleIds: 'deterministic',
     runtimeChunk: {
       name: './scripts/runtime',
     },
