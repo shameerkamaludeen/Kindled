@@ -1,0 +1,32 @@
+/* || Component - Card lead icon bg
+   ========================================================================== */
+
+// 1. Features
+// Card with lead, header icon, body and background color and an image
+// Simple lead with an icon
+
+.card-lead-icon-bg {
+   padding: 40px 30px;
+   background: url(../../images/company/card-background-pattern.png) center / cover no-repeat, white;
+
+   @include media-breakpoint-up(xl) {
+      padding: 60px 40px;
+   }
+}
+
+.card-lib-icon-wr {
+   width: 60px;
+}
+
+.card-lib-link {
+   transition: background-color 0.4s;
+   position: relative;
+   display: block;
+   width: 112px;
+}
+
+.card-lib-link-icon {
+   position: absolute;
+   right: 0;
+   top: 7px;
+}

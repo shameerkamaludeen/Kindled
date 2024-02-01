@@ -1,0 +1,93 @@
+/* || Block - Hero lead image animation
+   ========================================================================== */
+
+// 1. Features
+// Hero with heading, para, lead and image 
+// Animated lead
+// Pattern background
+
+.hero-lead-img-anim {
+  padding-top: 144px;
+  margin-bottom: 120px;
+}
+
+.hero-lia-tittle {
+  font-size: 2rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 3rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 4rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 5rem;
+  }
+}
+
+.hero-lia-no-wrap {
+  @include media-breakpoint-up(md) {
+    white-space: nowrap;
+  }
+}
+
+.hero-lia-circle-img-wr {
+  width: 170px;
+  height: 170px;
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.hero-lia-circle-img-arrow {
+  width: 40px;
+  height: 40px;
+}
+
+.hero-lia-img-desc-ctr-wr {
+  position: relative;
+  overflow: hidden;
+
+  @include media-breakpoint-up(lg) {
+    height: 400px;
+  }
+}
+
+.hero-lia-img-col {
+  height: 400px;
+
+  @include media-breakpoint-up(lg) {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: getColStretchWidth($grid-breakpoint: lg, $spacer: 2, $cols: 7);
+  }
+
+  @include media-breakpoint-up (xl) {
+    width: getColStretchWidth($grid-breakpoint: xl, $spacer: 2, $cols: 7);
+  }
+
+  @include media-breakpoint-up (xxl) {
+    width: getColStretchWidth($grid-breakpoint: xxl, $spacer: 2, $cols: 7);
+  }
+}
+
+.hero-lia-tittle-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px $body-color;
+}
+
+.hero-lia-pattern {
+  background: url(../../images/pattern-grid.png) left top / cover no-repeat;
+  pointer-events: none;
+}
