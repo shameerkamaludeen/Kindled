@@ -2,6 +2,7 @@ const path = require('path')
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const autoprefixer = require('autoprefixer');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 common.module.rules.push(
   {
@@ -33,6 +34,8 @@ common.module.rules.push(
     ]
   }
 );
+
+common.plugins.push(new BundleAnalyzerPlugin());
 
 module.exports = merge(common, {
   mode: 'development',
